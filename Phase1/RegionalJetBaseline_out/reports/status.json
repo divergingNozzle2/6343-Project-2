@@ -1,0 +1,11 @@
+{
+ "Problem": "RegionalJetBaseline",
+ "Script": "RegionalJetModel/RegionalJetBaseline.py",
+ "Optimizer": "pyOptSparse_IPOPT",
+ "Number of driver iterations": 15,
+ "Number of model evals": 16,
+ "Number of deriv evals": 14,
+ "Wall clock run time": "00 hours 00 minutes 42 seconds 106.2 milliseconds",
+ "Exit status": "SUCCESS",
+ "Report generation date and time": "2026-11-16 04:03:46 "
+}

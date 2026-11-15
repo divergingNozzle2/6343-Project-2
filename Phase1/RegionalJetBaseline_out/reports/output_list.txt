@@ -1,0 +1,1412 @@
+985 Explicit Output(s) in 'model'
+
+varname                                                                  val                       prom_name                                                                           
+-----------------------------------------------------------------------  ------------------------  ------------------------------------------------------------------------------------
+pre_mission
+  propulsion
+    engine_RegionalJet
+      aircraft:engine:scaled_sls_thrust                                  [23814.6]                 aircraft:engine:scaled_sls_thrust                                                   
+    propulsion_sum
+      aircraft:propulsion:total_scaled_sls_thrust                        [47629.2]                 aircraft:propulsion:total_scaled_sls_thrust                                         
+  core_subsystems
+    geometry
+      fuselage_layout
+        aircraft:fuselage:passenger_compartment_length                   [81.44429178]             pre_mission.AIRCRAFT_DATA_OVERRIDE:aircraft:fuselage:passenger_compartment_length   
+      fuselage_prelim
+        aircraft:fuselage:ref_diameter                                   [11.056]                  aircraft:fuselage:ref_diameter                                                      
+        aircraft:fuselage:planform_area                                  [1259.144288]             aircraft:fuselage:planform_area                                                     
+      wing_prelim
+        aircraft:wing:aspect_ratio                                       [8.74047691]              aircraft:wing:aspect_ratio                                                          
+      wetted_area
+        prelim_swet
+          prep_geom:_Names:CROOT                                         [18.15169154]             pre_mission.prelim_swet.prep_geom:_Names:CROOT                                      
+          prep_geom:_Names:CROOTB                                        [16.79492072]             pre_mission.prelim_swet.prep_geom:_Names:CROOTB                                     
+          prep_geom:_Names:CROTM                                         [0.92525375]              pre_mission.prelim_swet.prep_geom:_Names:CROTM                                      
+          prep_geom:_Names:CRTHTB                                        [12.22477364]             pre_mission.prelim_swet.prep_geom:_Names:CRTHTB                                     
+          prep_geom:_Names:SPANHT                                        [33.67862274]             pre_mission.prelim_swet.prep_geom:_Names:SPANHT                                     
+          prep_geom:_Names:XMULTH                                        [2.0671832]               pre_mission.prelim_swet.prep_geom:_Names:XMULTH                                     
+          prep_geom:_Names:CROTVT                                        [16.47272079]             pre_mission.prelim_swet.prep_geom:_Names:CROTVT                                     
+          prep_geom:_Names:SPANVT                                        [18.19783635]             pre_mission.prelim_swet.prep_geom:_Names:SPANVT                                     
+          prep_geom:_Names:XMULTV                                        [2.077787]                pre_mission.prelim_swet.prep_geom:_Names:XMULTV                                     
+          prep_geom:_Names:XDX                                           [11.056]                  pre_mission.prelim_swet.prep_geom:_Names:XDX                                        
+          prep_geom:_Names:XMULT                                         [2.04503712]              pre_mission.prelim_swet.prep_geom:_Names:XMULT                                      
+        wing_swet
+          aircraft:wing:wetted_area                                      [2100.18181169]           aircraft:wing:wetted_area                                                           
+        tail
+          aircraft:horizontal_tail:wetted_area                           [447.9761705]             aircraft:horizontal_tail:wetted_area                                                
+          aircraft:vertical_tail:wetted_area                             [415.91062379]            aircraft:vertical_tail:wetted_area                                                  
+        fus_swet
+          aircraft:fuselage:cross_section                                [96.00325132]             aircraft:fuselage:cross_section                                                     
+          aircraft:fuselage:wetted_area                                  [3371.31693671]           aircraft:fuselage:wetted_area                                                       
+        nacelles_swet
+          aircraft:nacelle:total_wetted_area                             [431.32759844]            aircraft:nacelle:total_wetted_area                                                  
+          aircraft:nacelle:wetted_area                                   [215.66379922]            aircraft:nacelle:wetted_area                                                        
+        canard_swet
+          aircraft:canard:wetted_area                                    [0.]                      aircraft:canard:wetted_area                                                         
+      fus_ratios
+        aircraft:fuselage:diameter_to_wing_span                          [0.10705917]              aircraft:fuselage:diameter_to_wing_span                                             
+        aircraft:fuselage:length_to_diameter                             [10.78075253]             aircraft:fuselage:length_to_diameter                                                
+      wing_characteristic_lengths
+        aircraft:wing:characteristic_length                              [11.81514477]             aircraft:wing:characteristic_length                                                 
+        aircraft:wing:fineness                                           [0.116375]                aircraft:wing:fineness                                                              
+      nacelle_characteristic_lengths
+        aircraft:nacelle:characteristic_length                           [11.25844183]             aircraft:nacelle:characteristic_length                                              
+        aircraft:nacelle:fineness                                        [1.64564955]              aircraft:nacelle:fineness                                                           
+      other_characteristic_lengths
+        canard_char_lengths
+          aircraft:canard:characteristic_length                          [0.]                      aircraft:canard:characteristic_length                                               
+          aircraft:canard:fineness                                       [0.]                      aircraft:canard:fineness                                                            
+        fuselage_char_lengths
+          aircraft:fuselage:characteristic_length                        [119.192]                 aircraft:fuselage:characteristic_length                                             
+          aircraft:fuselage:fineness                                     [10.78075253]             aircraft:fuselage:fineness                                                          
+        horizontal_tail_char_lengths
+          aircraft:horizontal_tail:characteristic_length                 [7.89521597]              aircraft:horizontal_tail:characteristic_length                                      
+          aircraft:horizontal_tail:fineness                              [0.1736]                  aircraft:horizontal_tail:fineness                                                   
+        vertical_tail_char_lengths
+          aircraft:vertical_tail:characteristic_length                   [10.99965931]             aircraft:vertical_tail:characteristic_length                                        
+          aircraft:vertical_tail:fineness                                [0.201]                   aircraft:vertical_tail:fineness                                                     
+      total_wetted_area
+        aircraft:design:total_wetted_area                                [6766.71314112]           aircraft:design:total_wetted_area                                                   
+      main_landing_gear_length
+        aircraft:landing_gear:main_gear_oleo_length                      [107.24133081]            pre_mission.AIRCRAFT_DATA_OVERRIDE:aircraft:landing_gear:main_gear_oleo_length      
+      nose_landing_gear_length
+        aircraft:landing_gear:nose_gear_oleo_length                      [60.837]                  pre_mission.AIRCRAFT_DATA_OVERRIDE:aircraft:landing_gear:nose_gear_oleo_length      
+    mass
+      cargo
+        cargo_mass
+          aircraft:crew_and_payload:cargo_mass                           [0.]                      aircraft:crew_and_payload:cargo_mass                                                
+        pax_payload_mass
+          aircraft:crew_and_payload:passenger_mass_total                 [21660.]                  aircraft:crew_and_payload:passenger_mass_total                                      
+          aircraft:crew_and_payload:baggage_mass                         [3420.]                   aircraft:crew_and_payload:baggage_mass                                              
+          aircraft:crew_and_payload:passenger_payload_mass               [25080.]                  aircraft:crew_and_payload:passenger_payload_mass                                    
+        total_payload_mass
+          aircraft:crew_and_payload:total_payload_mass                   [25080.]                  aircraft:crew_and_payload:total_payload_mass                                        
+      cargo_containers
+        aircraft:crew_and_payload:cargo_container_mass                   [700.]                    aircraft:crew_and_payload:cargo_container_mass                                      
+      engine_controls
+        aircraft:propulsion:total_engine_controls_mass                   [80.24629487]             aircraft:propulsion:total_engine_controls_mass                                      
+      avionics
+        aircraft:avionics:mass                                           [1224.32025589]           aircraft:avionics:mass                                                              
+      fuel_capacity_group
+        wing_fuel_mass_capacity
+          aircraft:fuel:wing_fuel_mass_capacity                          [0.]                      aircraft:fuel:wing_fuel_mass_capacity                                               
+        fuselage_fuel_mass_capacity
+          aircraft:fuel:fuselage_fuel_mass_capacity                      [35000.]                  aircraft:fuel:fuselage_fuel_mass_capacity                                           
+        auxiliary_fuel_mass_capacity
+          aircraft:fuel:auxiliary_fuel_mass_capacity                     [0.]                      aircraft:fuel:auxiliary_fuel_mass_capacity                                          
+        total_fuel_capacity
+          aircraft:fuel:total_capacity                                   [35000.]                  pre_mission.AIRCRAFT_DATA_OVERRIDE:aircraft:fuel:total_capacity                     
+      engine_mass
+        aircraft:engine:mass                                             [5779.0055999]            aircraft:engine:mass                                                                
+        aircraft:engine:additional_mass                                  [0.]                      aircraft:engine:additional_mass                                                     
+        aircraft:propulsion:total_engine_mass                            [11558.0111998]           aircraft:propulsion:total_engine_mass                                               
+      fuel_system
+        aircraft:fuel:fuel_system_mass                                   [582.21427753]            aircraft:fuel:fuel_system_mass                                                      
+      AC
+        aircraft:air_conditioning:mass                                   [1293.02276643]           aircraft:air_conditioning:mass                                                      
+      engine_oil
+        aircraft:propulsion:total_engine_oil_mass                        [114.76038258]            aircraft:propulsion:total_engine_oil_mass                                           
+      furnishings
+        aircraft:furnishings:mass                                        [10105.584832]            aircraft:furnishings:mass                                                           
+      hydraulics
+        aircraft:hydraulics:mass                                         [898.9793]                aircraft:hydraulics:mass                                                            
+      pass_service
+        aircraft:crew_and_payload:passenger_service_mass                 [1805.4507973]            aircraft:crew_and_payload:passenger_service_mass                                    
+      unusable_fuel
+        aircraft:fuel:total_volume                                       [0.]                      aircraft:fuel:total_volume                                                          
+        aircraft:fuel:unusable_fuel_mass                                 [467.71267163]            aircraft:fuel:unusable_fuel_mass                                                    
+      electrical
+        aircraft:electrical:mass                                         [1759.37765649]           aircraft:electrical:mass                                                            
+      surf_ctrl
+        aircraft:wing:surface_control_mass                               [1512.94524812]           aircraft:wing:surface_control_mass                                                  
+        aircraft:wing:control_surface_area                               [388.373745]              aircraft:wing:control_surface_area                                                  
+      fuselage
+        aircraft:fuselage:mass                                           [13296.44507978]          aircraft:fuselage:mass                                                              
+      htail
+        aircraft:horizontal_tail:mass                                    [1315.48795506]           aircraft:horizontal_tail:mass                                                       
+      vert_tail
+        aircraft:vertical_tail:mass                                      [814.94235697]            aircraft:vertical_tail:mass                                                         
+      starter
+        aircraft:propulsion:total_starter_mass                           [447.78403457]            aircraft:propulsion:total_starter_mass                                              
+      anti_icing
+        aircraft:anti_icing:mass                                         [184.08501408]            aircraft:anti_icing:mass                                                            
+      apu
+        aircraft:apu:mass                                                [842.9996854]             aircraft:apu:mass                                                                   
+      cabin_crew
+        aircraft:crew_and_payload:cabin_crew_mass                        [600.]                    aircraft:crew_and_payload:cabin_crew_mass                                           
+      flight_crew
+        aircraft:crew_and_payload:flight_crew_mass                       [450.]                    aircraft:crew_and_payload:flight_crew_mass                                          
+      instruments
+        aircraft:instruments:mass                                        [432.1555748]             aircraft:instruments:mass                                                           
+      misc_engine
+        aircraft:propulsion:total_misc_mass                              [528.03032943]            aircraft:propulsion:total_misc_mass                                                 
+      nacelle
+        aircraft:nacelle:mass                                            [724.78946448]            aircraft:nacelle:mass                                                               
+      paint
+        aircraft:paint:mass                                              [0.]                      aircraft:paint:mass                                                                 
+      thrust_rev
+        aircraft:engine:thrust_reversers_mass                            [0.]                      aircraft:engine:thrust_reversers_mass                                               
+        aircraft:propulsion:total_thrust_reversers_mass                  [0.]                      aircraft:propulsion:total_thrust_reversers_mass                                     
+      landing_group
+        landing_to_takeoff_mass_ratio
+          aircraft:design:landing_to_takeoff_mass_ratio                  [0.886]                   aircraft:design:landing_to_takeoff_mass_ratio                                       
+        landing_mass
+          aircraft:design:touchdown_mass_max                             [109707.95359863]         aircraft:design:touchdown_mass_max                                                  
+        landing_gear
+          main_gear
+            aircraft:landing_gear:main_gear_mass                         [4900.18033012]           aircraft:landing_gear:main_gear_mass                                                
+          nose_gear
+            aircraft:landing_gear:nose_gear_mass                         [642.57445377]            aircraft:landing_gear:nose_gear_mass                                                
+          total_mass
+            aircraft:landing_gear:total_mass                             [5542.7547839]            aircraft:landing_gear:total_mass                                                    
+      canard
+        aircraft:canard:mass                                             [0.]                      aircraft:canard:mass                                                                
+      fin
+        aircraft:fins:mass                                               [0.]                      aircraft:fins:mass                                                                  
+      wing_group
+        engine_pod_mass
+          aircraft:engine:pod_mass                                       [7007.056412]             aircraft:engine:pod_mass                                                            
+        wing_bending_material_factor
+          aircraft:wing:bending_material_factor                          [10.41542968]             aircraft:wing:bending_material_factor                                               
+          aircraft:wing:eng_pod_inertia_factor                           [0.94]                    aircraft:wing:eng_pod_inertia_factor                                                
+        wing_misc
+          aircraft:wing:misc_mass                                        [1491.72195177]           aircraft:wing:misc_mass                                                             
+        wing_shear_control
+          aircraft:wing:shear_control_mass                               [5868.62692002]           aircraft:wing:shear_control_mass                                                    
+        wing_bending
+          aircraft:wing:bending_material_mass                            [4618.00388849]           aircraft:wing:bending_material_mass                                                 
+        wing_total
+          aircraft:wing:mass                                             [11978.35276027]          aircraft:wing:mass                                                                  
+      mass_summation
+        empennage_mass
+          aircraft:design:empennage_mass                                 [2130.43031203]           aircraft:design:empennage_mass                                                      
+        structure_mass
+          aircraft:design:structure_mass                                 [34397.56186495]          aircraft:design:structure_mass                                                      
+        propulsion_mass
+          aircraft:propulsion:mass                                       [12668.25580676]          aircraft:propulsion:mass                                                            
+        controls_mass
+          aircraft:controls:mass                                         [1512.94524812]           aircraft:controls:mass                                                              
+        systems_and_equipment_mass
+          aircraft:design:systems_and_equipment_mass                     [18253.47033321]          aircraft:design:systems_and_equipment_mass                                          
+        empty_mass_group
+          empty_mass_margin
+            aircraft:design:empty_mass_margin                            [0.]                      aircraft:design:empty_mass_margin                                                   
+          empty_mass
+            aircraft:design:empty_mass                                   [65319.28800492]          aircraft:design:empty_mass                                                          
+        operating_items_mass
+          mission:operating_items_mass                                   [4137.92385151]           mission:operating_items_mass                                                        
+        operating_mass
+          mission:operating_mass                                         [69457.21185643]          mission:operating_mass                                                              
+        zero_fuel_mass
+          mission:zero_fuel_mass                                         [94537.21185643]          mission:zero_fuel_mass                                                              
+        useful_load_mass
+          aircraft:design:useful_load_mass                               [58504.58738858]          aircraft:design:useful_load_mass                                                    
+    aerodynamics
+      design
+        aircraft:design:mach                                             [0.81850872]              aircraft:design:mach                                                                
+        aircraft:design:lift_coefficient                                 [0.59132131]              aircraft:design:lift_coefficient                                                    
+      takeoff_l_over_d
+        mission:takeoff:lift_over_drag                                   [11.80167693]             pre_mission.AIRCRAFT_DATA_OVERRIDE:mission:takeoff:lift_over_drag                   
+    performance
+      aircraft:design:thrust_to_weight_ratio                             [0.3846528]               aircraft:design:thrust_to_weight_ratio                                              
+      aircraft:design:wing_loading                                       [101.48250247]            aircraft:design:wing_loading                                                        
+  total_fuel_mass_comp
+    total_fuel_mass                                                      [29286.66353707]          mission:total_fuel_mass                                                             
+takeoff
+  atmosphere
+    standard_atmosphere
+      temperature                                                        [288.15]                  takeoff.temperature                                                                 
+      static_pressure                                                    [101325.]                 takeoff.static_pressure                                                             
+      density                                                            [1.224999]                takeoff.density                                                                     
+      dynamic_viscosity                                                  [1.78938028e-05]          takeoff.dynamic_viscosity                                                           
+      speed_of_sound                                                     [340.26121619]            takeoff.speed_of_sound                                                              
+      dsos_dh                                                            [-0.00383775]             takeoff.dsos_dh                                                                     
+    flight_conditions
+      dynamic_pressure                                                   [0.]                      takeoff.dynamic_pressure                                                            
+      EAS                                                                [0.]                      takeoff.EAS                                                                         
+      mach                                                               [0.]                      takeoff.mach                                                                        
+  taxi_comp
+    end_of_taxi_mass                                                     [123823.87539349]         takeoff.end_of_taxi_mass                                                            
+  stall_speed
+    v_stall                                                              [66.38724232]             takeoff.v_stall                                                                     
+  final_conditions
+    mission:takeoff:ground_distance                                      [4920.46047032]           mission:takeoff:ground_distance                                                     
+    mission:takeoff:final_velocity                                       [81.71605658]             mission:takeoff:final_velocity                                                      
+    mission:takeoff:final_mass                                           [123323.87539349]         mission:takeoff:final_mass                                                          
+    mission:takeoff:final_altitude                                       [35.]                     mission:takeoff:final_altitude                                                      
+  compute_mach
+    final_mach                                                           [0.24015683]              mission:takeoff:final_mach                                                          
+traj
+  param_comp
+    parameter_vals:aircraft:engine:scale_factor                          [[1.0000252]]             traj.parameter_vals:aircraft:engine:scale_factor                                    
+    parameter_vals:aircraft:design:base_area                             [[0.]]                    traj.parameter_vals:aircraft:design:base_area                                       
+    parameter_vals:aircraft:design:lift_coefficient                      [[0.59132131]]            traj.parameter_vals:aircraft:design:lift_coefficient                                
+    parameter_vals:aircraft:design:lift_dependent_drag_coeff_factor      [[1.3]]                   traj.parameter_vals:aircraft:design:lift_dependent_drag_coeff_factor                
+    parameter_vals:aircraft:design:mach                                  [[0.81850872]]            traj.parameter_vals:aircraft:design:mach                                            
+    parameter_vals:aircraft:design:percent_excrescence_drag              [[0.06]]                  traj.parameter_vals:aircraft:design:percent_excrescence_drag                        
+    parameter_vals:aircraft:design:subsonic_drag_coeff_factor            [[0.91144]]               traj.parameter_vals:aircraft:design:subsonic_drag_coeff_factor                      
+    parameter_vals:aircraft:design:supersonic_drag_coeff_factor          [[1.]]                    traj.parameter_vals:aircraft:design:supersonic_drag_coeff_factor                    
+    parameter_vals:aircraft:design:zero_lift_drag_coeff_factor           [[0.85]]                  traj.parameter_vals:aircraft:design:zero_lift_drag_coeff_factor                     
+    parameter_vals:aircraft:fuselage:characteristic_length               [[119.192]]               traj.parameter_vals:aircraft:fuselage:characteristic_length                         
+    parameter_vals:aircraft:fuselage:cross_section                       [[96.00325132]]           traj.parameter_vals:aircraft:fuselage:cross_section                                 
+    parameter_vals:aircraft:fuselage:diameter_to_wing_span               [[0.10705917]]            traj.parameter_vals:aircraft:fuselage:diameter_to_wing_span                         
+    parameter_vals:aircraft:fuselage:fineness                            [[10.78075253]]           traj.parameter_vals:aircraft:fuselage:fineness                                      
+    parameter_vals:aircraft:fuselage:laminar_flow_lower                  [[0.]]                    traj.parameter_vals:aircraft:fuselage:laminar_flow_lower                            
+    parameter_vals:aircraft:fuselage:laminar_flow_upper                  [[0.]]                    traj.parameter_vals:aircraft:fuselage:laminar_flow_upper                            
+    parameter_vals:aircraft:fuselage:length_to_diameter                  [[10.78075253]]           traj.parameter_vals:aircraft:fuselage:length_to_diameter                            
+    parameter_vals:aircraft:fuselage:wetted_area                         [[3371.31693671]]         traj.parameter_vals:aircraft:fuselage:wetted_area                                   
+    parameter_vals:aircraft:horizontal_tail:characteristic_length        [[7.89521597]]            traj.parameter_vals:aircraft:horizontal_tail:characteristic_length                  
+    parameter_vals:aircraft:horizontal_tail:fineness                     [[0.1736]]                traj.parameter_vals:aircraft:horizontal_tail:fineness                               
+    parameter_vals:aircraft:horizontal_tail:laminar_flow_lower           [[0.]]                    traj.parameter_vals:aircraft:horizontal_tail:laminar_flow_lower                     
+    parameter_vals:aircraft:horizontal_tail:laminar_flow_upper           [[0.]]                    traj.parameter_vals:aircraft:horizontal_tail:laminar_flow_upper                     
+    parameter_vals:aircraft:horizontal_tail:wetted_area                  [[447.9761705]]           traj.parameter_vals:aircraft:horizontal_tail:wetted_area                            
+    parameter_vals:aircraft:nacelle:characteristic_length                [[11.25844183]]           traj.parameter_vals:aircraft:nacelle:characteristic_length                          
+    parameter_vals:aircraft:nacelle:fineness                             [[1.64564955]]            traj.parameter_vals:aircraft:nacelle:fineness                                       
+    parameter_vals:aircraft:nacelle:laminar_flow_lower                   [[0.]]                    traj.parameter_vals:aircraft:nacelle:laminar_flow_lower                             
+    parameter_vals:aircraft:nacelle:laminar_flow_upper                   [[0.]]                    traj.parameter_vals:aircraft:nacelle:laminar_flow_upper                             
+    parameter_vals:aircraft:nacelle:wetted_area                          [[215.66379922]]          traj.parameter_vals:aircraft:nacelle:wetted_area                                    
+    parameter_vals:aircraft:vertical_tail:characteristic_length          [[10.99965931]]           traj.parameter_vals:aircraft:vertical_tail:characteristic_length                    
+    parameter_vals:aircraft:vertical_tail:fineness                       [[0.201]]                 traj.parameter_vals:aircraft:vertical_tail:fineness                                 
+    parameter_vals:aircraft:vertical_tail:laminar_flow_lower             [[0.]]                    traj.parameter_vals:aircraft:vertical_tail:laminar_flow_lower                       
+    parameter_vals:aircraft:vertical_tail:laminar_flow_upper             [[0.]]                    traj.parameter_vals:aircraft:vertical_tail:laminar_flow_upper                       
+    parameter_vals:aircraft:vertical_tail:wetted_area                    [[415.91062379]]          traj.parameter_vals:aircraft:vertical_tail:wetted_area                              
+    parameter_vals:aircraft:wing:area                                    [[1220.15]]               traj.parameter_vals:aircraft:wing:area                                              
+    parameter_vals:aircraft:wing:aspect_ratio                            [[8.74047691]]            traj.parameter_vals:aircraft:wing:aspect_ratio                                      
+    parameter_vals:aircraft:wing:characteristic_length                   [[11.81514477]]           traj.parameter_vals:aircraft:wing:characteristic_length                             
+    parameter_vals:aircraft:wing:fineness                                [[0.116375]]              traj.parameter_vals:aircraft:wing:fineness                                          
+    parameter_vals:aircraft:wing:laminar_flow_lower                      [[0.]]                    traj.parameter_vals:aircraft:wing:laminar_flow_lower                                
+    parameter_vals:aircraft:wing:laminar_flow_upper                      [[0.]]                    traj.parameter_vals:aircraft:wing:laminar_flow_upper                                
+    parameter_vals:aircraft:wing:max_camber_at_70_semispan               [[2.]]                    traj.parameter_vals:aircraft:wing:max_camber_at_70_semispan                         
+    parameter_vals:aircraft:wing:span_efficiency_factor                  [[0.88]]                  traj.parameter_vals:aircraft:wing:span_efficiency_factor                            
+    parameter_vals:aircraft:wing:sweep                                   [[27.3292]]               traj.parameter_vals:aircraft:wing:sweep                                             
+    parameter_vals:aircraft:wing:taper_ratio                             [[0.301823]]              traj.parameter_vals:aircraft:wing:taper_ratio                                       
+    parameter_vals:aircraft:wing:thickness_to_chord                      [[0.116375]]              traj.parameter_vals:aircraft:wing:thickness_to_chord                                
+    parameter_vals:aircraft:wing:wetted_area                             [[2100.18181169]]         traj.parameter_vals:aircraft:wing:wetted_area                                       
+  phases
+    climb1
+      param_comp
+        t_initial_val                                                    [0.]                      traj.climb1.t_initial_val                                                           
+        t_duration_val                                                   [5070.69352224]           traj.climb1.t_duration_val                                                          
+        parameter_vals:aircraft:engine:scale_factor                      [[1.0000252]]             traj.climb1.parameter_vals:aircraft:engine:scale_factor                             
+        parameter_vals:aircraft:design:base_area                         [[0.]]                    traj.climb1.parameter_vals:aircraft:design:base_area                                
+        parameter_vals:aircraft:design:lift_coefficient                  [[0.59132131]]            traj.climb1.parameter_vals:aircraft:design:lift_coefficient                         
+        parameter_vals:aircraft:design:lift_dependent_drag_coeff_factor  [[1.3]]                   traj.climb1.parameter_vals:aircraft:design:lift_dependent_drag_coeff_factor         
+        parameter_vals:aircraft:design:mach                              [[0.81850872]]            traj.climb1.parameter_vals:aircraft:design:mach                                     
+        parameter_vals:aircraft:design:percent_excrescence_drag          [[0.06]]                  traj.climb1.parameter_vals:aircraft:design:percent_excrescence_drag                 
+        parameter_vals:aircraft:design:subsonic_drag_coeff_factor        [[0.91144]]               traj.climb1.parameter_vals:aircraft:design:subsonic_drag_coeff_factor               
+        parameter_vals:aircraft:design:supersonic_drag_coeff_factor      [[1.]]                    traj.climb1.parameter_vals:aircraft:design:supersonic_drag_coeff_factor             
+        parameter_vals:aircraft:design:zero_lift_drag_coeff_factor       [[0.85]]                  traj.climb1.parameter_vals:aircraft:design:zero_lift_drag_coeff_factor              
+        parameter_vals:aircraft:fuselage:characteristic_length           [[119.192]]               traj.climb1.parameter_vals:aircraft:fuselage:characteristic_length                  
+        parameter_vals:aircraft:fuselage:cross_section                   [[96.00325132]]           traj.climb1.parameter_vals:aircraft:fuselage:cross_section                          
+        parameter_vals:aircraft:fuselage:diameter_to_wing_span           [[0.10705917]]            traj.climb1.parameter_vals:aircraft:fuselage:diameter_to_wing_span                  
+        parameter_vals:aircraft:fuselage:fineness                        [[10.78075253]]           traj.climb1.parameter_vals:aircraft:fuselage:fineness                               
+        parameter_vals:aircraft:fuselage:laminar_flow_lower              [[0.]]                    traj.climb1.parameter_vals:aircraft:fuselage:laminar_flow_lower                     
+        parameter_vals:aircraft:fuselage:laminar_flow_upper              [[0.]]                    traj.climb1.parameter_vals:aircraft:fuselage:laminar_flow_upper                     
+        parameter_vals:aircraft:fuselage:length_to_diameter              [[10.78075253]]           traj.climb1.parameter_vals:aircraft:fuselage:length_to_diameter                     
+        parameter_vals:aircraft:fuselage:wetted_area                     [[3371.31693671]]         traj.climb1.parameter_vals:aircraft:fuselage:wetted_area                            
+        parameter_vals:aircraft:horizontal_tail:characteristic_length    [[7.89521597]]            traj.climb1.parameter_vals:aircraft:horizontal_tail:characteristic_length           
+        parameter_vals:aircraft:horizontal_tail:fineness                 [[0.1736]]                traj.climb1.parameter_vals:aircraft:horizontal_tail:fineness                        
+        parameter_vals:aircraft:horizontal_tail:laminar_flow_lower       [[0.]]                    traj.climb1.parameter_vals:aircraft:horizontal_tail:laminar_flow_lower              
+        parameter_vals:aircraft:horizontal_tail:laminar_flow_upper       [[0.]]                    traj.climb1.parameter_vals:aircraft:horizontal_tail:laminar_flow_upper              
+        parameter_vals:aircraft:horizontal_tail:wetted_area              [[447.9761705]]           traj.climb1.parameter_vals:aircraft:horizontal_tail:wetted_area                     
+        parameter_vals:aircraft:nacelle:characteristic_length            [[11.25844183]]           traj.climb1.parameter_vals:aircraft:nacelle:characteristic_length                   
+        parameter_vals:aircraft:nacelle:fineness                         [[1.64564955]]            traj.climb1.parameter_vals:aircraft:nacelle:fineness                                
+        parameter_vals:aircraft:nacelle:laminar_flow_lower               [[0.]]                    traj.climb1.parameter_vals:aircraft:nacelle:laminar_flow_lower                      
+        parameter_vals:aircraft:nacelle:laminar_flow_upper               [[0.]]                    traj.climb1.parameter_vals:aircraft:nacelle:laminar_flow_upper                      
+        parameter_vals:aircraft:nacelle:wetted_area                      [[215.66379922]]          traj.climb1.parameter_vals:aircraft:nacelle:wetted_area                             
+        parameter_vals:aircraft:vertical_tail:characteristic_length      [[10.99965931]]           traj.climb1.parameter_vals:aircraft:vertical_tail:characteristic_length             
+        parameter_vals:aircraft:vertical_tail:fineness                   [[0.201]]                 traj.climb1.parameter_vals:aircraft:vertical_tail:fineness                          
+        parameter_vals:aircraft:vertical_tail:laminar_flow_lower         [[0.]]                    traj.climb1.parameter_vals:aircraft:vertical_tail:laminar_flow_lower                
+        parameter_vals:aircraft:vertical_tail:laminar_flow_upper         [[0.]]                    traj.climb1.parameter_vals:aircraft:vertical_tail:laminar_flow_upper                
+        parameter_vals:aircraft:vertical_tail:wetted_area                [[415.91062379]]          traj.climb1.parameter_vals:aircraft:vertical_tail:wetted_area                       
+        parameter_vals:aircraft:wing:area                                [[1220.15]]               traj.climb1.parameter_vals:aircraft:wing:area                                       
+        parameter_vals:aircraft:wing:aspect_ratio                        [[8.74047691]]            traj.climb1.parameter_vals:aircraft:wing:aspect_ratio                               
+        parameter_vals:aircraft:wing:characteristic_length               [[11.81514477]]           traj.climb1.parameter_vals:aircraft:wing:characteristic_length                      
+        parameter_vals:aircraft:wing:fineness                            [[0.116375]]              traj.climb1.parameter_vals:aircraft:wing:fineness                                   
+        parameter_vals:aircraft:wing:laminar_flow_lower                  [[0.]]                    traj.climb1.parameter_vals:aircraft:wing:laminar_flow_lower                         
+        parameter_vals:aircraft:wing:laminar_flow_upper                  [[0.]]                    traj.climb1.parameter_vals:aircraft:wing:laminar_flow_upper                         
+        parameter_vals:aircraft:wing:max_camber_at_70_semispan           [[2.]]                    traj.climb1.parameter_vals:aircraft:wing:max_camber_at_70_semispan                  
+        parameter_vals:aircraft:wing:span_efficiency_factor              [[0.88]]                  traj.climb1.parameter_vals:aircraft:wing:span_efficiency_factor                     
+        parameter_vals:aircraft:wing:sweep                               [[27.3292]]               traj.climb1.parameter_vals:aircraft:wing:sweep                                      
+        parameter_vals:aircraft:wing:taper_ratio                         [[0.301823]]              traj.climb1.parameter_vals:aircraft:wing:taper_ratio                                
+        parameter_vals:aircraft:wing:thickness_to_chord                  [[0.116375]]              traj.climb1.parameter_vals:aircraft:wing:thickness_to_chord                         
+        parameter_vals:aircraft:wing:wetted_area                         [[2100.18181169]]         traj.climb1.parameter_vals:aircraft:wing:wetted_area                                
+      time
+        t                                                                |13842.77732401|          traj.climb1.t                                                                       
+        t_phase                                                          |13842.77732401|          traj.climb1.t_phase                                                                 
+        dt_dstau                                                         |2400.27565409|           traj.climb1.dt_dstau                                                                
+      control_comp
+        control_values:mach                                              |2.5406091|               traj.climb1.control_values:mach                                                     
+        control_rates:mach_rate                                          |0.00042334|              traj.climb1.control_rates:mach_rate                                                 
+        control_rates:mach_rate2                                         |0.0|                     traj.climb1.control_rates:mach_rate2                                                
+        control_boundary_values:mach                                     |0.8357033|               traj.climb1.control_comp.control_boundary_values:mach                               
+        control_boundary_rates:mach_rate                                 |0.00013387|              traj.climb1.control_comp.control_boundary_rates:mach_rate                           
+        control_boundary_rates:mach_rate2                                |0.0|                     traj.climb1.control_comp.control_boundary_rates:mach_rate2                          
+        control_values:altitude                                          |95548.50913705|          traj.climb1.control_values:altitude                                                 
+        control_rates:altitude_rate                                      |30.86851093|             traj.climb1.control_rates:altitude_rate                                             
+        control_rates:altitude_rate2                                     |0.0|                     traj.climb1.control_rates:altitude_rate2                                            
+        control_boundary_values:altitude                                 |35000.0|                 traj.climb1.control_comp.control_boundary_values:altitude                           
+        control_boundary_rates:altitude_rate                             |9.76148025|              traj.climb1.control_comp.control_boundary_rates:altitude_rate                       
+        control_boundary_rates:altitude_rate2                            |0.0|                     traj.climb1.control_comp.control_boundary_rates:altitude_rate2                      
+      state_interp
+        staterate_col:mass                                               |2.20022316|              traj.climb1.state_interp.staterate_col:mass                                         
+        staterate_col:distance                                           |669.08176001|            traj.climb1.state_interp.staterate_col:distance                                     
+      rhs_all
+        atmosphere
+          standard_atmosphere
+            temperature                                                  |1135.44446915|           traj.climb1.rhs_all.temperature                                                     
+            static_pressure                                              |274870.33123634|         traj.climb1.rhs_all.static_pressure                                                 
+            density                                                      |3.55511984|              traj.climb1.rhs_all.density                                                         
+            dynamic_viscosity                                            |7.225e-05|               traj.climb1.rhs_all.dynamic_viscosity                                               
+            speed_of_sound                                               |1425.38268851|           traj.climb1.rhs_all.speed_of_sound                                                  
+            dsos_dh                                                      |0.01840061|              traj.climb1.rhs_all.dsos_dh                                                         
+          flight_conditions
+            dynamic_pressure                                             |901.25430016|            traj.climb1.rhs_all.dynamic_pressure                                                
+            EAS                                                          |1831.2169068|            traj.climb1.rhs_all.EAS                                                             
+            velocity                                                     |2589.75049975|           traj.climb1.rhs_all.velocity                                                        
+        velocity_rate_comp
+          velocity_rate                                                  |0.13492902|              traj.climb1.rhs_all.velocity_rate                                                   
+        solver_sub
+          propulsion
+            engine_RegionalJet
+              interpolation
+                fuel_flow_rate_unscaled                                  |10068.89331717|          traj.climb1.rhs_all.engine_RegionalJet.interpolation.fuel_flow_rate_unscaled        
+                nox_rate_unscaled                                        |49.16980667|             traj.climb1.rhs_all.engine_RegionalJet.interpolation.nox_rate_unscaled              
+                thrust_net_unscaled                                      |20458.1739652|           traj.climb1.rhs_all.engine_RegionalJet.interpolation.thrust_net_unscaled            
+              interp_max_throttles
+                throttle_max                                             |4.47213595|              traj.climb1.rhs_all.engine_RegionalJet.interp_max_throttles.throttle_max            
+              max_interpolation
+                thrust_net_max_unscaled                                  |47273.9302071|           traj.climb1.rhs_all.engine_RegionalJet.max_interpolation.thrust_net_max_unscaled    
+              engine_scaling
+                fuel_flow_rate_negative                                  |10069.14700559|          traj.climb1.rhs_all.engine_RegionalJet.fuel_flow_rate_negative                      
+                nox_rate                                                 |49.17104551|             traj.climb1.rhs_all.engine_RegionalJet.nox_rate                                     
+                thrust_net                                               |20458.68941428|          traj.climb1.rhs_all.engine_RegionalJet.thrust_net                                   
+                thrust_net_max                                           |47275.12128622|          traj.climb1.rhs_all.engine_RegionalJet.thrust_net_max                               
+            vectorize_performance
+              thrust_net                                                 |20458.68941428|          traj.climb1.rhs_all.thrust_net                                                      
+              thrust_net_max                                             |47275.12128622|          traj.climb1.rhs_all.thrust_net_max                                                  
+              fuel_flow_rate_negative                                    |10069.14700559|          traj.climb1.rhs_all.fuel_flow_rate_negative                                         
+              electric_power_in                                          |0.0|                     traj.climb1.rhs_all.electric_power_in                                               
+              nox_rate                                                   |49.17104551|             traj.climb1.rhs_all.nox_rate                                                        
+              t4                                                         |0.0|                     traj.climb1.rhs_all.t4                                                              
+              shaft_power                                                |0.0|                     traj.climb1.rhs_all.shaft_power                                                     
+              shaft_power_max                                            |0.0|                     traj.climb1.rhs_all.shaft_power_max                                                 
+              rotations_per_minute                                       |0.0|                     traj.climb1.rhs_all.rotations_per_minute                                            
+              propeller_tip_speed                                        |0.0|                     traj.climb1.rhs_all.propeller_tip_speed                                             
+            propulsion_sum
+              thrust_net_total                                           |40917.37882856|          traj.climb1.rhs_all.thrust_net_total                                                
+              thrust_net_max_total                                       |94550.24257244|          traj.climb1.rhs_all.thrust_net_max_total                                            
+              fuel_flow_rate_negative_total                              |20138.29401117|          traj.climb1.rhs_all.fuel_flow_rate_negative_total                                   
+              electric_power_in_total                                    |0.0|                     traj.climb1.rhs_all.electric_power_in_total                                         
+              nox_rate_total                                             |98.34209103|             traj.climb1.rhs_all.nox_rate_total                                                  
+          aerodynamics
+            Mux
+              wetted_areas                                               |4030.28877064|           traj.climb1.rhs_all.aerodynamics.wetted_areas                                       
+              fineness_ratios                                            |11.03290674|             traj.climb1.rhs_all.aerodynamics.fineness_ratios                                    
+              characteristic_lengths                                     |121.58602911|            traj.climb1.rhs_all.aerodynamics.characteristic_lengths                             
+              laminar_fractions_upper                                    |0.0|                     traj.climb1.rhs_all.aerodynamics.laminar_fractions_upper                            
+              laminar_fractions_lower                                    |0.0|                     traj.climb1.rhs_all.aerodynamics.laminar_fractions_lower                            
+            DynamicPressure
+              dynamic_pressure                                           |901.4285556|             traj.climb1.rhs_all.aerodynamics.dynamic_pressure                                   
+            lift
+              lift_coefficient                                           |2.31943892|              traj.climb1.rhs_all.lift_coefficient                                                
+              lift                                                       |2389792.11126576|        traj.climb1.rhs_all.lift                                                            
+            PressureDrag
+              pressure_drag_coeff                                        |0.01409655|              traj.climb1.rhs_all.aerodynamics.PressureDrag.pressure_drag_coeff                   
+            InducedDrag
+              induced_drag_coeff                                         |0.05405322|              traj.climb1.rhs_all.aerodynamics.InducedDrag.induced_drag_coeff                     
+            CompressibilityDrag
+              compress_drag_coeff                                        |0.00275608|              traj.climb1.rhs_all.aerodynamics.CompressibilityDrag.compress_drag_coeff            
+            SkinFrictionDrag
+              skin_friction_drag_coeff                                   |0.08224815|              traj.climb1.rhs_all.aerodynamics.SkinFrictionDrag.skin_friction_drag_coeff          
+            Drag
+              CDI
+                CDI                                                      |0.06751137|              traj.climb1.rhs_all.aerodynamics.CDI                                                
+              CD0
+                CD0                                                      |0.08390112|              traj.climb1.rhs_all.aerodynamics.CD0                                                
+              drag
+                total_drag_coeff
+                  CD_prescaled                                           |0.15477113|              traj.climb1.rhs_all.aerodynamics.Drag.drag.CD_prescaled                             
+                simple_CD
+                  drag_coefficient                                       |0.1410646|               traj.climb1.rhs_all.drag_coefficient                                                
+                simple_drag
+                  drag                                                   |142335.32599082|         traj.climb1.rhs_all.drag                                                            
+            Buffet
+              DELCLB                                                     |9.9646577|               traj.climb1.rhs_all.aerodynamics.Buffet.DELCLB                                      
+          mission_EOM
+            required_thrust
+              thrust_required                                            |182009.56913892|         traj.climb1.rhs_all.thrust_required                                                 
+            groundspeed
+              distance_rate                                              |789.29987674|            traj.climb1.rhs_all.distance_rate                                                   
+            excess_specific_power
+              specific_energy_rate                                       |70.76248|                traj.climb1.rhs_all.specific_energy_rate_excess                                     
+            altitude_rate_max
+              altitude_rate                                              |68.8545466|              traj.climb1.rhs_all.altitude_rate_max                                               
+      timeseries
+        mach                                                             |2.5406091|               traj.climb1.timeseries.mach                                                         
+        altitude                                                         |95548.50913705|          traj.climb1.timeseries.altitude                                                     
+        altitude_rate                                                    |30.86851093|             traj.climb1.timeseries.altitude_rate                                                
+        drag                                                             |31998.25416766|          traj.climb1.timeseries.drag                                                         
+        electric_power_in_total                                          |0.0|                     traj.climb1.timeseries.electric_power_in_total                                      
+        fuel_flow_rate_negative_total                                    |20138.29401117|          traj.climb1.timeseries.fuel_flow_rate_negative_total                                
+        lift                                                             |537246.63818925|         traj.climb1.timeseries.lift                                                         
+        throttle                                                         |2.62332781|              traj.climb1.timeseries.throttle                                                     
+        specific_energy_rate_excess                                      |70.76248|                traj.climb1.timeseries.specific_energy_rate_excess                                  
+        thrust_net_total                                                 |40917.37882856|          traj.climb1.timeseries.thrust_net_total                                             
+        velocity                                                         |789.35595232|            traj.climb1.timeseries.velocity                                                     
+        drag_coefficient                                                 |0.1410646|               traj.climb1.timeseries.drag_coefficient                                             
+        lift_coefficient                                                 |2.31943892|              traj.climb1.timeseries.lift_coefficient                                             
+        time                                                             |13842.77732401|          traj.climb1.timeseries.time                                                         
+        time_phase                                                       |13842.77732401|          traj.climb1.timeseries.time_phase                                                   
+        mach_rate                                                        |0.00042334|              traj.climb1.timeseries.mach_rate                                                    
+        mass                                                             |243690.97615044|         traj.climb1.timeseries.mass                                                         
+        distance                                                         |2208761.12675148|        traj.climb1.timeseries.distance                                                     
+      mission_bus_variables
+        mach                                                             |2.16183256|              traj.climb1.mission_bus_variables.mach                                              
+        altitude                                                         |78652.71768985|          traj.climb1.mission_bus_variables.altitude                                          
+        altitude_rate                                                    |26.73291464|             traj.climb1.mission_bus_variables.altitude_rate                                     
+        drag                                                             |27406.67721203|          traj.climb1.mission_bus_variables.drag                                              
+        electric_power_in_total                                          |0.0|                     traj.climb1.mission_bus_variables.electric_power_in_total                           
+        fuel_flow_rate_negative_total                                    |17287.277557|            traj.climb1.mission_bus_variables.fuel_flow_rate_negative_total                     
+        lift                                                             |465491.2460497|          traj.climb1.mission_bus_variables.lift                                              
+        throttle                                                         |2.13969209|              traj.climb1.mission_bus_variables.throttle                                          
+        specific_energy_rate_excess                                      |61.19874335|             traj.climb1.mission_bus_variables.specific_energy_rate_excess                       
+        thrust_net_total                                                 |35035.34501465|          traj.climb1.mission_bus_variables.thrust_net_total                                  
+        velocity                                                         |676.24971256|            traj.climb1.mission_bus_variables.velocity                                          
+        drag_coefficient                                                 |0.11756599|              traj.climb1.mission_bus_variables.drag_coefficient                                  
+        lift_coefficient                                                 |1.95531058|              traj.climb1.mission_bus_variables.lift_coefficient                                  
+        time                                                             |11394.96645989|          traj.climb1.mission_bus_variables.time                                              
+        time_phase                                                       |11394.96645989|          traj.climb1.mission_bus_variables.time_phase                                        
+        mach_rate                                                        |0.00036662|              traj.climb1.mission_bus_variables.mach_rate                                         
+        mass                                                             |211143.27773491|         traj.climb1.mission_bus_variables.mass                                              
+        distance                                                         |1776504.35515361|        traj.climb1.mission_bus_variables.distance                                          
+      collocation_constraint
+        defects:mass                                                     |1.9e-07|                 traj.climb1.collocation_constraint.defects:mass                                     
+        defects:distance                                                 |5.4e-07|                 traj.climb1.collocation_constraint.defects:distance                                 
+    cruise1
+      param_comp
+        t_initial_val                                                    [5070.69352224]           traj.cruise1.t_initial_val                                                          
+        t_duration_val                                                   [16977.51977265]          traj.cruise1.t_duration_val                                                         
+        parameter_vals:aircraft:engine:scale_factor                      [[1.0000252]]             traj.cruise1.parameter_vals:aircraft:engine:scale_factor                            
+        parameter_vals:aircraft:design:base_area                         [[0.]]                    traj.cruise1.parameter_vals:aircraft:design:base_area                               
+        parameter_vals:aircraft:design:lift_coefficient                  [[0.59132131]]            traj.cruise1.parameter_vals:aircraft:design:lift_coefficient                        
+        parameter_vals:aircraft:design:lift_dependent_drag_coeff_factor  [[1.3]]                   traj.cruise1.parameter_vals:aircraft:design:lift_dependent_drag_coeff_factor        
+        parameter_vals:aircraft:design:mach                              [[0.81850872]]            traj.cruise1.parameter_vals:aircraft:design:mach                                    
+        parameter_vals:aircraft:design:percent_excrescence_drag          [[0.06]]                  traj.cruise1.parameter_vals:aircraft:design:percent_excrescence_drag                
+        parameter_vals:aircraft:design:subsonic_drag_coeff_factor        [[0.91144]]               traj.cruise1.parameter_vals:aircraft:design:subsonic_drag_coeff_factor              
+        parameter_vals:aircraft:design:supersonic_drag_coeff_factor      [[1.]]                    traj.cruise1.parameter_vals:aircraft:design:supersonic_drag_coeff_factor            
+        parameter_vals:aircraft:design:zero_lift_drag_coeff_factor       [[0.85]]                  traj.cruise1.parameter_vals:aircraft:design:zero_lift_drag_coeff_factor             
+        parameter_vals:aircraft:fuselage:characteristic_length           [[119.192]]               traj.cruise1.parameter_vals:aircraft:fuselage:characteristic_length                 
+        parameter_vals:aircraft:fuselage:cross_section                   [[96.00325132]]           traj.cruise1.parameter_vals:aircraft:fuselage:cross_section                         
+        parameter_vals:aircraft:fuselage:diameter_to_wing_span           [[0.10705917]]            traj.cruise1.parameter_vals:aircraft:fuselage:diameter_to_wing_span                 
+        parameter_vals:aircraft:fuselage:fineness                        [[10.78075253]]           traj.cruise1.parameter_vals:aircraft:fuselage:fineness                              
+        parameter_vals:aircraft:fuselage:laminar_flow_lower              [[0.]]                    traj.cruise1.parameter_vals:aircraft:fuselage:laminar_flow_lower                    
+        parameter_vals:aircraft:fuselage:laminar_flow_upper              [[0.]]                    traj.cruise1.parameter_vals:aircraft:fuselage:laminar_flow_upper                    
+        parameter_vals:aircraft:fuselage:length_to_diameter              [[10.78075253]]           traj.cruise1.parameter_vals:aircraft:fuselage:length_to_diameter                    
+        parameter_vals:aircraft:fuselage:wetted_area                     [[3371.31693671]]         traj.cruise1.parameter_vals:aircraft:fuselage:wetted_area                           
+        parameter_vals:aircraft:horizontal_tail:characteristic_length    [[7.89521597]]            traj.cruise1.parameter_vals:aircraft:horizontal_tail:characteristic_length          
+        parameter_vals:aircraft:horizontal_tail:fineness                 [[0.1736]]                traj.cruise1.parameter_vals:aircraft:horizontal_tail:fineness                       
+        parameter_vals:aircraft:horizontal_tail:laminar_flow_lower       [[0.]]                    traj.cruise1.parameter_vals:aircraft:horizontal_tail:laminar_flow_lower             
+        parameter_vals:aircraft:horizontal_tail:laminar_flow_upper       [[0.]]                    traj.cruise1.parameter_vals:aircraft:horizontal_tail:laminar_flow_upper             
+        parameter_vals:aircraft:horizontal_tail:wetted_area              [[447.9761705]]           traj.cruise1.parameter_vals:aircraft:horizontal_tail:wetted_area                    
+        parameter_vals:aircraft:nacelle:characteristic_length            [[11.25844183]]           traj.cruise1.parameter_vals:aircraft:nacelle:characteristic_length                  
+        parameter_vals:aircraft:nacelle:fineness                         [[1.64564955]]            traj.cruise1.parameter_vals:aircraft:nacelle:fineness                               
+        parameter_vals:aircraft:nacelle:laminar_flow_lower               [[0.]]                    traj.cruise1.parameter_vals:aircraft:nacelle:laminar_flow_lower                     
+        parameter_vals:aircraft:nacelle:laminar_flow_upper               [[0.]]                    traj.cruise1.parameter_vals:aircraft:nacelle:laminar_flow_upper                     
+        parameter_vals:aircraft:nacelle:wetted_area                      [[215.66379922]]          traj.cruise1.parameter_vals:aircraft:nacelle:wetted_area                            
+        parameter_vals:aircraft:vertical_tail:characteristic_length      [[10.99965931]]           traj.cruise1.parameter_vals:aircraft:vertical_tail:characteristic_length            
+        parameter_vals:aircraft:vertical_tail:fineness                   [[0.201]]                 traj.cruise1.parameter_vals:aircraft:vertical_tail:fineness                         
+        parameter_vals:aircraft:vertical_tail:laminar_flow_lower         [[0.]]                    traj.cruise1.parameter_vals:aircraft:vertical_tail:laminar_flow_lower               
+        parameter_vals:aircraft:vertical_tail:laminar_flow_upper         [[0.]]                    traj.cruise1.parameter_vals:aircraft:vertical_tail:laminar_flow_upper               
+        parameter_vals:aircraft:vertical_tail:wetted_area                [[415.91062379]]          traj.cruise1.parameter_vals:aircraft:vertical_tail:wetted_area                      
+        parameter_vals:aircraft:wing:area                                [[1220.15]]               traj.cruise1.parameter_vals:aircraft:wing:area                                      
+        parameter_vals:aircraft:wing:aspect_ratio                        [[8.74047691]]            traj.cruise1.parameter_vals:aircraft:wing:aspect_ratio                              
+        parameter_vals:aircraft:wing:characteristic_length               [[11.81514477]]           traj.cruise1.parameter_vals:aircraft:wing:characteristic_length                     
+        parameter_vals:aircraft:wing:fineness                            [[0.116375]]              traj.cruise1.parameter_vals:aircraft:wing:fineness                                  
+        parameter_vals:aircraft:wing:laminar_flow_lower                  [[0.]]                    traj.cruise1.parameter_vals:aircraft:wing:laminar_flow_lower                        
+        parameter_vals:aircraft:wing:laminar_flow_upper                  [[0.]]                    traj.cruise1.parameter_vals:aircraft:wing:laminar_flow_upper                        
+        parameter_vals:aircraft:wing:max_camber_at_70_semispan           [[2.]]                    traj.cruise1.parameter_vals:aircraft:wing:max_camber_at_70_semispan                 
+        parameter_vals:aircraft:wing:span_efficiency_factor              [[0.88]]                  traj.cruise1.parameter_vals:aircraft:wing:span_efficiency_factor                    
+        parameter_vals:aircraft:wing:sweep                               [[27.3292]]               traj.cruise1.parameter_vals:aircraft:wing:sweep                                     
+        parameter_vals:aircraft:wing:taper_ratio                         [[0.301823]]              traj.cruise1.parameter_vals:aircraft:wing:taper_ratio                               
+        parameter_vals:aircraft:wing:thickness_to_chord                  [[0.116375]]              traj.cruise1.parameter_vals:aircraft:wing:thickness_to_chord                        
+        parameter_vals:aircraft:wing:wetted_area                         [[2100.18181169]]         traj.cruise1.parameter_vals:aircraft:wing:wetted_area                               
+      time
+        t                                                                |66472.23584932|          traj.cruise1.t                                                                      
+        t_phase                                                          |46347.90580348|          traj.cruise1.t_phase                                                                
+        dt_dstau                                                         |8036.51950141|           traj.cruise1.dt_dstau                                                               
+      control_comp
+        control_values:mach                                              |3.48826604|              traj.cruise1.control_values:mach                                                    
+        control_rates:mach_rate                                          |0.0|                     traj.cruise1.control_rates:mach_rate                                                
+        control_rates:mach_rate2                                         |0.0|                     traj.cruise1.control_rates:mach_rate2                                               
+        control_boundary_values:mach                                     |1.10308658|              traj.cruise1.control_comp.control_boundary_values:mach                              
+        control_boundary_rates:mach_rate                                 |0.0|                     traj.cruise1.control_comp.control_boundary_rates:mach_rate                          
+        control_boundary_rates:mach_rate2                                |0.0|                     traj.cruise1.control_comp.control_boundary_rates:mach_rate2                         
+        control_values:altitude                                          |156524.75842499|         traj.cruise1.control_values:altitude                                                
+        control_rates:altitude_rate                                      |0.0|                     traj.cruise1.control_rates:altitude_rate                                            
+        control_rates:altitude_rate2                                     |0.0|                     traj.cruise1.control_rates:altitude_rate2                                           
+        control_boundary_values:altitude                                 |49497.47468306|          traj.cruise1.control_comp.control_boundary_values:altitude                          
+        control_boundary_rates:altitude_rate                             |0.0|                     traj.cruise1.control_comp.control_boundary_rates:altitude_rate                      
+        control_boundary_rates:altitude_rate2                            |0.0|                     traj.cruise1.control_comp.control_boundary_rates:altitude_rate2                     
+      state_interp
+        staterate_col:mass                                               |1.82717331|              traj.cruise1.state_interp.staterate_col:mass                                        
+        staterate_col:distance                                           |895.96332276|            traj.cruise1.state_interp.staterate_col:distance                                    
+      rhs_all
+        atmosphere
+          standard_atmosphere
+            temperature                                                  |979.05867711|            traj.cruise1.rhs_all.temperature                                                    
+            static_pressure                                              |106923.88181845|         traj.cruise1.rhs_all.static_pressure                                                
+            density                                                      |1.70144829|              traj.cruise1.rhs_all.density                                                        
+            dynamic_viscosity                                            |6.413e-05|               traj.cruise1.rhs_all.dynamic_viscosity                                              
+            speed_of_sound                                               |1326.37093738|           traj.cruise1.rhs_all.speed_of_sound                                                 
+            dsos_dh                                                      |0.0196904|               traj.cruise1.rhs_all.dsos_dh                                                        
+          flight_conditions
+            dynamic_pressure                                             |950.87071586|            traj.cruise1.rhs_all.dynamic_pressure                                               
+            EAS                                                          |1891.59334627|           traj.cruise1.rhs_all.EAS                                                            
+            velocity                                                     |3394.25633582|           traj.cruise1.rhs_all.velocity                                                       
+        velocity_rate_comp
+          velocity_rate                                                  |0.0|                     traj.cruise1.rhs_all.velocity_rate                                                  
+        solver_sub
+          propulsion
+            engine_RegionalJet
+              interpolation
+                fuel_flow_rate_unscaled                                  |8344.26356317|           traj.cruise1.rhs_all.engine_RegionalJet.interpolation.fuel_flow_rate_unscaled       
+                nox_rate_unscaled                                        |44.55027258|             traj.cruise1.rhs_all.engine_RegionalJet.interpolation.nox_rate_unscaled             
+                thrust_net_unscaled                                      |14576.46491876|          traj.cruise1.rhs_all.engine_RegionalJet.interpolation.thrust_net_unscaled           
+              interp_max_throttles
+                throttle_max                                             |4.47213595|              traj.cruise1.rhs_all.engine_RegionalJet.interp_max_throttles.throttle_max           
+              max_interpolation
+                thrust_net_max_unscaled                                  |18759.71590403|          traj.cruise1.rhs_all.engine_RegionalJet.max_interpolation.thrust_net_max_unscaled   
+              engine_scaling
+                fuel_flow_rate_negative                                  |8344.47379909|           traj.cruise1.rhs_all.engine_RegionalJet.fuel_flow_rate_negative                     
+                nox_rate                                                 |44.55139503|             traj.cruise1.rhs_all.engine_RegionalJet.nox_rate                                    
+                thrust_net                                               |14576.83217663|          traj.cruise1.rhs_all.engine_RegionalJet.thrust_net                                  
+                thrust_net_max                                           |18760.18856001|          traj.cruise1.rhs_all.engine_RegionalJet.thrust_net_max                              
+            vectorize_performance
+              thrust_net                                                 |14576.83217663|          traj.cruise1.rhs_all.thrust_net                                                     
+              thrust_net_max                                             |18760.18856001|          traj.cruise1.rhs_all.thrust_net_max                                                 
+              fuel_flow_rate_negative                                    |8344.47379909|           traj.cruise1.rhs_all.fuel_flow_rate_negative                                        
+              electric_power_in                                          |0.0|                     traj.cruise1.rhs_all.electric_power_in                                              
+              nox_rate                                                   |44.55139503|             traj.cruise1.rhs_all.nox_rate                                                       
+              t4                                                         |0.0|                     traj.cruise1.rhs_all.t4                                                             
+              shaft_power                                                |0.0|                     traj.cruise1.rhs_all.shaft_power                                                    
+              shaft_power_max                                            |0.0|                     traj.cruise1.rhs_all.shaft_power_max                                                
+              rotations_per_minute                                       |0.0|                     traj.cruise1.rhs_all.rotations_per_minute                                           
+              propeller_tip_speed                                        |0.0|                     traj.cruise1.rhs_all.propeller_tip_speed                                            
+            propulsion_sum
+              thrust_net_total                                           |29153.66435326|          traj.cruise1.rhs_all.thrust_net_total                                               
+              thrust_net_max_total                                       |37520.37712003|          traj.cruise1.rhs_all.thrust_net_max_total                                           
+              fuel_flow_rate_negative_total                              |16688.94759817|          traj.cruise1.rhs_all.fuel_flow_rate_negative_total                                  
+              electric_power_in_total                                    |0.0|                     traj.cruise1.rhs_all.electric_power_in_total                                        
+              nox_rate_total                                             |89.10279007|             traj.cruise1.rhs_all.nox_rate_total                                                 
+          aerodynamics
+            Mux
+              wetted_areas                                               |4030.28877064|           traj.cruise1.rhs_all.aerodynamics.wetted_areas                                      
+              fineness_ratios                                            |11.03290674|             traj.cruise1.rhs_all.aerodynamics.fineness_ratios                                   
+              characteristic_lengths                                     |121.58602911|            traj.cruise1.rhs_all.aerodynamics.characteristic_lengths                            
+              laminar_fractions_upper                                    |0.0|                     traj.cruise1.rhs_all.aerodynamics.laminar_fractions_upper                           
+              laminar_fractions_lower                                    |0.0|                     traj.cruise1.rhs_all.aerodynamics.laminar_fractions_lower                           
+            DynamicPressure
+              dynamic_pressure                                           |951.05464569|            traj.cruise1.rhs_all.aerodynamics.dynamic_pressure                                  
+            lift
+              lift_coefficient                                           |1.86323665|              traj.cruise1.rhs_all.lift_coefficient                                               
+              lift                                                       |2150592.52456742|        traj.cruise1.rhs_all.lift                                                           
+            PressureDrag
+              pressure_drag_coeff                                        |0.00468426|              traj.cruise1.rhs_all.aerodynamics.PressureDrag.pressure_drag_coeff                  
+            InducedDrag
+              induced_drag_coeff                                         |0.0323165|               traj.cruise1.rhs_all.aerodynamics.InducedDrag.induced_drag_coeff                    
+            CompressibilityDrag
+              compress_drag_coeff                                        |0.006559|                traj.cruise1.rhs_all.aerodynamics.CompressibilityDrag.compress_drag_coeff           
+            SkinFrictionDrag
+              skin_friction_drag_coeff                                   |0.0821465|               traj.cruise1.rhs_all.aerodynamics.SkinFrictionDrag.skin_friction_drag_coeff         
+            Drag
+              CDI
+                CDI                                                      |0.03698562|              traj.cruise1.rhs_all.aerodynamics.CDI                                               
+              CD0
+                CD0                                                      |0.0887055|               traj.cruise1.rhs_all.aerodynamics.CD0                                               
+              drag
+                total_drag_coeff
+                  CD_prescaled                                           |0.12327113|              traj.cruise1.rhs_all.aerodynamics.Drag.drag.CD_prescaled                            
+                simple_CD
+                  drag_coefficient                                       |0.11235424|              traj.cruise1.rhs_all.drag_coefficient                                               
+                simple_drag
+                  drag                                                   |129681.96007841|         traj.cruise1.rhs_all.drag                                                           
+            Buffet
+              DELCLB                                                     |3.57957441|              traj.cruise1.rhs_all.aerodynamics.Buffet.DELCLB                                     
+          mission_EOM
+            required_thrust
+              thrust_required                                            |129681.96007841|         traj.cruise1.rhs_all.thrust_required                                                
+            groundspeed
+              distance_rate                                              |1034.56933116|           traj.cruise1.rhs_all.distance_rate                                                  
+            excess_specific_power
+              specific_energy_rate                                       |18.62279082|             traj.cruise1.rhs_all.specific_energy_rate_excess                                    
+            altitude_rate_max
+              altitude_rate                                              |18.62279082|             traj.cruise1.rhs_all.altitude_rate_max                                              
+      timeseries
+        mach                                                             |3.48826604|              traj.cruise1.timeseries.mach                                                        
+        altitude                                                         |156524.75842499|         traj.cruise1.timeseries.altitude                                                    
+        altitude_rate                                                    |0.0|                     traj.cruise1.timeseries.altitude_rate                                               
+        drag                                                             |29153.66435326|          traj.cruise1.timeseries.drag                                                        
+        electric_power_in_total                                          |0.0|                     traj.cruise1.timeseries.electric_power_in_total                                     
+        fuel_flow_rate_negative_total                                    |16688.94759817|          traj.cruise1.timeseries.fuel_flow_rate_negative_total                               
+        lift                                                             |483472.43197101|         traj.cruise1.timeseries.lift                                                        
+        throttle                                                         |3.44074714|              traj.cruise1.timeseries.throttle                                                    
+        specific_energy_rate_excess                                      |18.62279082|             traj.cruise1.timeseries.specific_energy_rate_excess                                 
+        thrust_net_total                                                 |29153.66435326|          traj.cruise1.timeseries.thrust_net_total                                            
+        velocity                                                         |1034.56933116|           traj.cruise1.timeseries.velocity                                                    
+        drag_coefficient                                                 |0.11235424|              traj.cruise1.timeseries.drag_coefficient                                            
+        lift_coefficient                                                 |1.86323665|              traj.cruise1.timeseries.lift_coefficient                                            
+        time                                                             |66472.23584932|          traj.cruise1.timeseries.time                                                        
+        time_phase                                                       |46347.90580348|          traj.cruise1.timeseries.time_phase                                                  
+        mach_rate                                                        |0.0|                     traj.cruise1.timeseries.mach_rate                                                   
+        mass                                                             |219299.40648105|         traj.cruise1.timeseries.mass                                                        
+        distance                                                         |14118197.05133406|       traj.cruise1.timeseries.distance                                                    
+      mission_bus_variables
+        mach                                                             |3.02092701|              traj.cruise1.mission_bus_variables.mach                                             
+        altitude                                                         |135554.41711726|         traj.cruise1.mission_bus_variables.altitude                                         
+        altitude_rate                                                    |0.0|                     traj.cruise1.mission_bus_variables.altitude_rate                                    
+        drag                                                             |25264.7156042|           traj.cruise1.mission_bus_variables.drag                                             
+        electric_power_in_total                                          |0.0|                     traj.cruise1.mission_bus_variables.electric_power_in_total                          
+        fuel_flow_rate_negative_total                                    |14461.1655282|           traj.cruise1.mission_bus_variables.fuel_flow_rate_negative_total                    
+        lift                                                             |419137.66705239|         traj.cruise1.mission_bus_variables.lift                                             
+        throttle                                                         |2.98182163|              traj.cruise1.mission_bus_variables.throttle                                         
+        specific_energy_rate_excess                                      |15.93442062|             traj.cruise1.mission_bus_variables.specific_energy_rate_excess                      
+        thrust_net_total                                                 |25264.7156042|           traj.cruise1.mission_bus_variables.thrust_net_total                                 
+        velocity                                                         |895.96332276|            traj.cruise1.mission_bus_variables.velocity                                         
+        drag_coefficient                                                 |0.09736676|              traj.cruise1.mission_bus_variables.drag_coefficient                                 
+        lift_coefficient                                                 |1.61529926|              traj.cruise1.mission_bus_variables.lift_coefficient                                 
+        time                                                             |55969.53351605|          traj.cruise1.mission_bus_variables.time                                             
+        time_phase                                                       |38152.23056436|          traj.cruise1.mission_bus_variables.time_phase                                       
+        mach_rate                                                        |0.0|                     traj.cruise1.mission_bus_variables.mach_rate                                        
+        mass                                                             |190117.64795713|         traj.cruise1.mission_bus_variables.mass                                             
+        distance                                                         |11838514.69961312|       traj.cruise1.mission_bus_variables.distance                                         
+      collocation_constraint
+        defects:mass                                                     |3.4e-07|                 traj.cruise1.collocation_constraint.defects:mass                                    
+        defects:distance                                                 |1e-08|                   traj.cruise1.collocation_constraint.defects:distance                                
+    descent1
+      param_comp
+        t_initial_val                                                    [22048.21329489]          traj.descent1.t_initial_val                                                         
+        t_duration_val                                                   [2845.06567201]           traj.descent1.t_duration_val                                                        
+        parameter_vals:aircraft:engine:scale_factor                      [[1.0000252]]             traj.descent1.parameter_vals:aircraft:engine:scale_factor                           
+        parameter_vals:aircraft:design:base_area                         [[0.]]                    traj.descent1.parameter_vals:aircraft:design:base_area                              
+        parameter_vals:aircraft:design:lift_coefficient                  [[0.59132131]]            traj.descent1.parameter_vals:aircraft:design:lift_coefficient                       
+        parameter_vals:aircraft:design:lift_dependent_drag_coeff_factor  [[1.3]]                   traj.descent1.parameter_vals:aircraft:design:lift_dependent_drag_coeff_factor       
+        parameter_vals:aircraft:design:mach                              [[0.81850872]]            traj.descent1.parameter_vals:aircraft:design:mach                                   
+        parameter_vals:aircraft:design:percent_excrescence_drag          [[0.06]]                  traj.descent1.parameter_vals:aircraft:design:percent_excrescence_drag               
+        parameter_vals:aircraft:design:subsonic_drag_coeff_factor        [[0.91144]]               traj.descent1.parameter_vals:aircraft:design:subsonic_drag_coeff_factor             
+        parameter_vals:aircraft:design:supersonic_drag_coeff_factor      [[1.]]                    traj.descent1.parameter_vals:aircraft:design:supersonic_drag_coeff_factor           
+        parameter_vals:aircraft:design:zero_lift_drag_coeff_factor       [[0.85]]                  traj.descent1.parameter_vals:aircraft:design:zero_lift_drag_coeff_factor            
+        parameter_vals:aircraft:fuselage:characteristic_length           [[119.192]]               traj.descent1.parameter_vals:aircraft:fuselage:characteristic_length                
+        parameter_vals:aircraft:fuselage:cross_section                   [[96.00325132]]           traj.descent1.parameter_vals:aircraft:fuselage:cross_section                        
+        parameter_vals:aircraft:fuselage:diameter_to_wing_span           [[0.10705917]]            traj.descent1.parameter_vals:aircraft:fuselage:diameter_to_wing_span                
+        parameter_vals:aircraft:fuselage:fineness                        [[10.78075253]]           traj.descent1.parameter_vals:aircraft:fuselage:fineness                             
+        parameter_vals:aircraft:fuselage:laminar_flow_lower              [[0.]]                    traj.descent1.parameter_vals:aircraft:fuselage:laminar_flow_lower                   
+        parameter_vals:aircraft:fuselage:laminar_flow_upper              [[0.]]                    traj.descent1.parameter_vals:aircraft:fuselage:laminar_flow_upper                   
+        parameter_vals:aircraft:fuselage:length_to_diameter              [[10.78075253]]           traj.descent1.parameter_vals:aircraft:fuselage:length_to_diameter                   
+        parameter_vals:aircraft:fuselage:wetted_area                     [[3371.31693671]]         traj.descent1.parameter_vals:aircraft:fuselage:wetted_area                          
+        parameter_vals:aircraft:horizontal_tail:characteristic_length    [[7.89521597]]            traj.descent1.parameter_vals:aircraft:horizontal_tail:characteristic_length         
+        parameter_vals:aircraft:horizontal_tail:fineness                 [[0.1736]]                traj.descent1.parameter_vals:aircraft:horizontal_tail:fineness                      
+        parameter_vals:aircraft:horizontal_tail:laminar_flow_lower       [[0.]]                    traj.descent1.parameter_vals:aircraft:horizontal_tail:laminar_flow_lower            
+        parameter_vals:aircraft:horizontal_tail:laminar_flow_upper       [[0.]]                    traj.descent1.parameter_vals:aircraft:horizontal_tail:laminar_flow_upper            
+        parameter_vals:aircraft:horizontal_tail:wetted_area              [[447.9761705]]           traj.descent1.parameter_vals:aircraft:horizontal_tail:wetted_area                   
+        parameter_vals:aircraft:nacelle:characteristic_length            [[11.25844183]]           traj.descent1.parameter_vals:aircraft:nacelle:characteristic_length                 
+        parameter_vals:aircraft:nacelle:fineness                         [[1.64564955]]            traj.descent1.parameter_vals:aircraft:nacelle:fineness                              
+        parameter_vals:aircraft:nacelle:laminar_flow_lower               [[0.]]                    traj.descent1.parameter_vals:aircraft:nacelle:laminar_flow_lower                    
+        parameter_vals:aircraft:nacelle:laminar_flow_upper               [[0.]]                    traj.descent1.parameter_vals:aircraft:nacelle:laminar_flow_upper                    
+        parameter_vals:aircraft:nacelle:wetted_area                      [[215.66379922]]          traj.descent1.parameter_vals:aircraft:nacelle:wetted_area                           
+        parameter_vals:aircraft:vertical_tail:characteristic_length      [[10.99965931]]           traj.descent1.parameter_vals:aircraft:vertical_tail:characteristic_length           
+        parameter_vals:aircraft:vertical_tail:fineness                   [[0.201]]                 traj.descent1.parameter_vals:aircraft:vertical_tail:fineness                        
+        parameter_vals:aircraft:vertical_tail:laminar_flow_lower         [[0.]]                    traj.descent1.parameter_vals:aircraft:vertical_tail:laminar_flow_lower              
+        parameter_vals:aircraft:vertical_tail:laminar_flow_upper         [[0.]]                    traj.descent1.parameter_vals:aircraft:vertical_tail:laminar_flow_upper              
+        parameter_vals:aircraft:vertical_tail:wetted_area                [[415.91062379]]          traj.descent1.parameter_vals:aircraft:vertical_tail:wetted_area                     
+        parameter_vals:aircraft:wing:area                                [[1220.15]]               traj.descent1.parameter_vals:aircraft:wing:area                                     
+        parameter_vals:aircraft:wing:aspect_ratio                        [[8.74047691]]            traj.descent1.parameter_vals:aircraft:wing:aspect_ratio                             
+        parameter_vals:aircraft:wing:characteristic_length               [[11.81514477]]           traj.descent1.parameter_vals:aircraft:wing:characteristic_length                    
+        parameter_vals:aircraft:wing:fineness                            [[0.116375]]              traj.descent1.parameter_vals:aircraft:wing:fineness                                 
+        parameter_vals:aircraft:wing:laminar_flow_lower                  [[0.]]                    traj.descent1.parameter_vals:aircraft:wing:laminar_flow_lower                       
+        parameter_vals:aircraft:wing:laminar_flow_upper                  [[0.]]                    traj.descent1.parameter_vals:aircraft:wing:laminar_flow_upper                       
+        parameter_vals:aircraft:wing:max_camber_at_70_semispan           [[2.]]                    traj.descent1.parameter_vals:aircraft:wing:max_camber_at_70_semispan                
+        parameter_vals:aircraft:wing:span_efficiency_factor              [[0.88]]                  traj.descent1.parameter_vals:aircraft:wing:span_efficiency_factor                   
+        parameter_vals:aircraft:wing:sweep                               [[27.3292]]               traj.descent1.parameter_vals:aircraft:wing:sweep                                    
+        parameter_vals:aircraft:wing:taper_ratio                         [[0.301823]]              traj.descent1.parameter_vals:aircraft:wing:taper_ratio                              
+        parameter_vals:aircraft:wing:thickness_to_chord                  [[0.116375]]              traj.descent1.parameter_vals:aircraft:wing:thickness_to_chord                       
+        parameter_vals:aircraft:wing:wetted_area                         [[2100.18181169]]         traj.descent1.parameter_vals:aircraft:wing:wetted_area                              
+      time
+        t                                                                |105178.24296263|         traj.descent1.t                                                                     
+        t_phase                                                          |7766.90809592|           traj.descent1.t_phase                                                               
+        dt_dstau                                                         |1346.74711395|           traj.descent1.dt_dstau                                                              
+      control_comp
+        control_values:mach                                              |2.49946686|              traj.descent1.control_values:mach                                                   
+        control_rates:mach_rate                                          |0.00075451|              traj.descent1.control_rates:mach_rate                                               
+        control_rates:mach_rate2                                         |0.0|                     traj.descent1.control_rates:mach_rate2                                              
+        control_boundary_values:mach                                     |0.8357033|               traj.descent1.control_comp.control_boundary_values:mach                             
+        control_boundary_rates:mach_rate                                 |0.0002386|               traj.descent1.control_comp.control_boundary_rates:mach_rate                         
+        control_boundary_rates:mach_rate2                                |0.0|                     traj.descent1.control_comp.control_boundary_rates:mach_rate2                        
+        control_values:altitude                                          |92949.00536484|          traj.descent1.control_values:altitude                                               
+        control_rates:altitude_rate                                      |55.01621982|             traj.descent1.control_rates:altitude_rate                                           
+        control_rates:altitude_rate2                                     |0.0|                     traj.descent1.control_rates:altitude_rate2                                          
+        control_boundary_values:altitude                                 |35000.0|                 traj.descent1.control_comp.control_boundary_values:altitude                         
+        control_boundary_rates:altitude_rate                             |17.39765629|             traj.descent1.control_comp.control_boundary_rates:altitude_rate                     
+        control_boundary_rates:altitude_rate2                            |0.0|                     traj.descent1.control_comp.control_boundary_rates:altitude_rate2                    
+      state_interp
+        staterate_col:mass                                               |1.06526137|              traj.descent1.state_interp.staterate_col:mass                                       
+        staterate_col:distance                                           |688.02298498|            traj.descent1.state_interp.staterate_col:distance                                   
+      rhs_all
+        atmosphere
+          standard_atmosphere
+            temperature                                                  |1141.61077985|           traj.descent1.rhs_all.temperature                                                   
+            static_pressure                                              |281816.83506433|         traj.descent1.rhs_all.static_pressure                                               
+            density                                                      |3.63046164|              traj.descent1.rhs_all.density                                                       
+            dynamic_viscosity                                            |7.257e-05|               traj.descent1.rhs_all.dynamic_viscosity                                             
+            speed_of_sound                                               |1429.28012979|           traj.descent1.rhs_all.speed_of_sound                                                
+            dsos_dh                                                      |0.01834993|              traj.descent1.rhs_all.dsos_dh                                                       
+          flight_conditions
+            dynamic_pressure                                             |895.12625396|            traj.descent1.rhs_all.dynamic_pressure                                              
+            EAS                                                          |1823.91480109|           traj.descent1.rhs_all.EAS                                                           
+            velocity                                                     |2553.65677146|           traj.descent1.rhs_all.velocity                                                      
+        velocity_rate_comp
+          velocity_rate                                                  |0.24113836|              traj.descent1.rhs_all.velocity_rate                                                 
+        solver_sub
+          propulsion
+            engine_RegionalJet
+              interpolation
+                fuel_flow_rate_unscaled                                  |4826.94629818|           traj.descent1.rhs_all.engine_RegionalJet.interpolation.fuel_flow_rate_unscaled      
+                nox_rate_unscaled                                        |36.0732037|              traj.descent1.rhs_all.engine_RegionalJet.interpolation.nox_rate_unscaled            
+                thrust_net_unscaled                                      |6707.61814444|           traj.descent1.rhs_all.engine_RegionalJet.interpolation.thrust_net_unscaled          
+              interp_max_throttles
+                throttle_max                                             |4.47213595|              traj.descent1.rhs_all.engine_RegionalJet.interp_max_throttles.throttle_max          
+              max_interpolation
+                thrust_net_max_unscaled                                  |48458.18496032|          traj.descent1.rhs_all.engine_RegionalJet.max_interpolation.thrust_net_max_unscaled  
+              engine_scaling
+                fuel_flow_rate_negative                                  |4827.06791436|           traj.descent1.rhs_all.engine_RegionalJet.fuel_flow_rate_negative                    
+                nox_rate                                                 |36.07411257|             traj.descent1.rhs_all.engine_RegionalJet.nox_rate                                   
+                thrust_net                                               |6707.78714464|           traj.descent1.rhs_all.engine_RegionalJet.thrust_net                                 
+                thrust_net_max                                           |48459.40587705|          traj.descent1.rhs_all.engine_RegionalJet.thrust_net_max                             
+            vectorize_performance
+              thrust_net                                                 |6707.78714464|           traj.descent1.rhs_all.thrust_net                                                    
+              thrust_net_max                                             |48459.40587705|          traj.descent1.rhs_all.thrust_net_max                                                
+              fuel_flow_rate_negative                                    |4827.06791436|           traj.descent1.rhs_all.fuel_flow_rate_negative                                       
+              electric_power_in                                          |0.0|                     traj.descent1.rhs_all.electric_power_in                                             
+              nox_rate                                                   |36.07411257|             traj.descent1.rhs_all.nox_rate                                                      
+              t4                                                         |0.0|                     traj.descent1.rhs_all.t4                                                            
+              shaft_power                                                |0.0|                     traj.descent1.rhs_all.shaft_power                                                   
+              shaft_power_max                                            |0.0|                     traj.descent1.rhs_all.shaft_power_max                                               
+              rotations_per_minute                                       |0.0|                     traj.descent1.rhs_all.rotations_per_minute                                          
+              propeller_tip_speed                                        |0.0|                     traj.descent1.rhs_all.propeller_tip_speed                                           
+            propulsion_sum
+              thrust_net_total                                           |13415.57428929|          traj.descent1.rhs_all.thrust_net_total                                              
+              thrust_net_max_total                                       |96918.8117541|           traj.descent1.rhs_all.thrust_net_max_total                                          
+              fuel_flow_rate_negative_total                              |9654.13582872|           traj.descent1.rhs_all.fuel_flow_rate_negative_total                                 
+              electric_power_in_total                                    |0.0|                     traj.descent1.rhs_all.electric_power_in_total                                       
+              nox_rate_total                                             |72.14822515|             traj.descent1.rhs_all.nox_rate_total                                                
+          aerodynamics
+            Mux
+              wetted_areas                                               |4030.28877064|           traj.descent1.rhs_all.aerodynamics.wetted_areas                                     
+              fineness_ratios                                            |11.03290674|             traj.descent1.rhs_all.aerodynamics.fineness_ratios                                  
+              characteristic_lengths                                     |121.58602911|            traj.descent1.rhs_all.aerodynamics.characteristic_lengths                           
+              laminar_fractions_upper                                    |0.0|                     traj.descent1.rhs_all.aerodynamics.laminar_fractions_upper                          
+              laminar_fractions_lower                                    |0.0|                     traj.descent1.rhs_all.aerodynamics.laminar_fractions_lower                          
+            DynamicPressure
+              dynamic_pressure                                           |895.29933155|            traj.descent1.rhs_all.aerodynamics.dynamic_pressure                                 
+            lift
+              lift_coefficient                                           |1.91193415|              traj.descent1.rhs_all.lift_coefficient                                              
+              lift                                                       |1960398.44918229|        traj.descent1.rhs_all.lift                                                          
+            PressureDrag
+              pressure_drag_coeff                                        |0.00581699|              traj.descent1.rhs_all.aerodynamics.PressureDrag.pressure_drag_coeff                 
+            InducedDrag
+              induced_drag_coeff                                         |0.03631822|              traj.descent1.rhs_all.aerodynamics.InducedDrag.induced_drag_coeff                   
+            CompressibilityDrag
+              compress_drag_coeff                                        |0.00259982|              traj.descent1.rhs_all.aerodynamics.CompressibilityDrag.compress_drag_coeff          
+            SkinFrictionDrag
+              skin_friction_drag_coeff                                   |0.0822858|               traj.descent1.rhs_all.aerodynamics.SkinFrictionDrag.skin_friction_drag_coeff        
+            Drag
+              CDI
+                CDI                                                      |0.04190328|              traj.descent1.rhs_all.aerodynamics.CDI                                              
+              CD0
+                CD0                                                      |0.08380961|              traj.descent1.rhs_all.aerodynamics.CD0                                              
+              drag
+                total_drag_coeff
+                  CD_prescaled                                           |0.12307069|              traj.descent1.rhs_all.aerodynamics.Drag.drag.CD_prescaled                           
+                simple_CD
+                  drag_coefficient                                       |0.11217155|              traj.descent1.rhs_all.drag_coefficient                                              
+                simple_drag
+                  drag                                                   |115266.78494789|         traj.descent1.rhs_all.drag                                                          
+            Buffet
+              DELCLB                                                     |10.15441124|             traj.descent1.rhs_all.aerodynamics.Buffet.DELCLB                                    
+          mission_EOM
+            required_thrust
+              thrust_required                                            |59675.44759832|          traj.descent1.rhs_all.thrust_required                                               
+            groundspeed
+              distance_rate                                              |778.17392713|            traj.descent1.rhs_all.distance_rate                                                 
+            excess_specific_power
+              specific_energy_rate                                       |98.3391411|              traj.descent1.rhs_all.specific_energy_rate_excess                                   
+            altitude_rate_max
+              altitude_rate                                              |101.82970436|            traj.descent1.rhs_all.altitude_rate_max                                             
+      timeseries
+        mach                                                             |2.49946686|              traj.descent1.timeseries.mach                                                       
+        altitude                                                         |92949.00536484|          traj.descent1.timeseries.altitude                                                   
+        altitude_rate                                                    |55.01621982|             traj.descent1.timeseries.altitude_rate                                              
+        drag                                                             |25913.00407103|          traj.descent1.timeseries.drag                                                       
+        electric_power_in_total                                          |0.0|                     traj.descent1.timeseries.electric_power_in_total                                    
+        fuel_flow_rate_negative_total                                    |9654.13582872|           traj.descent1.timeseries.fuel_flow_rate_negative_total                              
+        lift                                                             |440715.10294541|         traj.descent1.timeseries.lift                                                       
+        throttle                                                         |0.97872986|              traj.descent1.timeseries.throttle                                                   
+        specific_energy_rate_excess                                      |98.3391411|              traj.descent1.timeseries.specific_energy_rate_excess                                
+        thrust_net_total                                                 |13415.57428929|          traj.descent1.timeseries.thrust_net_total                                           
+        velocity                                                         |778.35458394|            traj.descent1.timeseries.velocity                                                   
+        drag_coefficient                                                 |0.11217155|              traj.descent1.timeseries.drag_coefficient                                           
+        lift_coefficient                                                 |1.91193415|              traj.descent1.timeseries.lift_coefficient                                           
+        time                                                             |105178.24296263|         traj.descent1.timeseries.time                                                       
+        time_phase                                                       |7766.90809592|           traj.descent1.timeseries.time_phase                                                 
+        mach_rate                                                        |0.00075451|              traj.descent1.timeseries.mach_rate                                                  
+        mass                                                             |199905.0082528|          traj.descent1.timeseries.mass                                                       
+        distance                                                         |22667200.45809424|       traj.descent1.timeseries.distance                                                   
+      mission_bus_variables
+        mach                                                             |2.16183256|              traj.descent1.mission_bus_variables.mach                                            
+        altitude                                                         |78652.71768985|          traj.descent1.mission_bus_variables.altitude                                        
+        altitude_rate                                                    |47.64544399|             traj.descent1.mission_bus_variables.altitude_rate                                   
+        drag                                                             |22399.02764413|          traj.descent1.mission_bus_variables.drag                                            
+        electric_power_in_total                                          |0.0|                     traj.descent1.mission_bus_variables.electric_power_in_total                         
+        fuel_flow_rate_negative_total                                    |8412.37718827|           traj.descent1.mission_bus_variables.fuel_flow_rate_negative_total                   
+        lift                                                             |381701.06617252|         traj.descent1.mission_bus_variables.lift                                            
+        throttle                                                         |0.79454708|              traj.descent1.mission_bus_variables.throttle                                        
+        specific_energy_rate_excess                                      |83.60792869|             traj.descent1.mission_bus_variables.specific_energy_rate_excess                     
+        thrust_net_total                                                 |11727.58556697|          traj.descent1.mission_bus_variables.thrust_net_total                                
+        velocity                                                         |676.2497081|             traj.descent1.mission_bus_variables.velocity                                        
+        drag_coefficient                                                 |0.09345451|              traj.descent1.mission_bus_variables.drag_coefficient                                
+        lift_coefficient                                                 |1.59388514|              traj.descent1.mission_bus_variables.lift_coefficient                                
+        time                                                             |90959.67005983|          traj.descent1.mission_bus_variables.time                                            
+        time_phase                                                       |6393.48991741|           traj.descent1.mission_bus_variables.time_phase                                      
+        mach_rate                                                        |0.00065342|              traj.descent1.mission_bus_variables.mach_rate                                       
+        mass                                                             |173136.6914212|          traj.descent1.mission_bus_variables.mass                                            
+        distance                                                         |19627875.66242581|       traj.descent1.mission_bus_variables.distance                                        
+      collocation_constraint
+        defects:mass                                                     |2.3e-07|                 traj.descent1.collocation_constraint.defects:mass                                   
+        defects:distance                                                 |2.83e-06|                traj.descent1.collocation_constraint.defects:distance                               
+    res_cruise
+      param_comp
+        t_initial_val                                                    [24893.2789669]           traj.res_cruise.t_initial_val                                                       
+        t_duration_val                                                   [1609.51078307]           traj.res_cruise.t_duration_val                                                      
+        parameter_vals:aircraft:engine:scale_factor                      [[1.0000252]]             traj.res_cruise.parameter_vals:aircraft:engine:scale_factor                         
+        parameter_vals:aircraft:design:base_area                         [[0.]]                    traj.res_cruise.parameter_vals:aircraft:design:base_area                            
+        parameter_vals:aircraft:design:lift_coefficient                  [[0.59132131]]            traj.res_cruise.parameter_vals:aircraft:design:lift_coefficient                     
+        parameter_vals:aircraft:design:lift_dependent_drag_coeff_factor  [[1.3]]                   traj.res_cruise.parameter_vals:aircraft:design:lift_dependent_drag_coeff_factor     
+        parameter_vals:aircraft:design:mach                              [[0.81850872]]            traj.res_cruise.parameter_vals:aircraft:design:mach                                 
+        parameter_vals:aircraft:design:percent_excrescence_drag          [[0.06]]                  traj.res_cruise.parameter_vals:aircraft:design:percent_excrescence_drag             
+        parameter_vals:aircraft:design:subsonic_drag_coeff_factor        [[0.91144]]               traj.res_cruise.parameter_vals:aircraft:design:subsonic_drag_coeff_factor           
+        parameter_vals:aircraft:design:supersonic_drag_coeff_factor      [[1.]]                    traj.res_cruise.parameter_vals:aircraft:design:supersonic_drag_coeff_factor         
+        parameter_vals:aircraft:design:zero_lift_drag_coeff_factor       [[0.85]]                  traj.res_cruise.parameter_vals:aircraft:design:zero_lift_drag_coeff_factor          
+        parameter_vals:aircraft:fuselage:characteristic_length           [[119.192]]               traj.res_cruise.parameter_vals:aircraft:fuselage:characteristic_length              
+        parameter_vals:aircraft:fuselage:cross_section                   [[96.00325132]]           traj.res_cruise.parameter_vals:aircraft:fuselage:cross_section                      
+        parameter_vals:aircraft:fuselage:diameter_to_wing_span           [[0.10705917]]            traj.res_cruise.parameter_vals:aircraft:fuselage:diameter_to_wing_span              
+        parameter_vals:aircraft:fuselage:fineness                        [[10.78075253]]           traj.res_cruise.parameter_vals:aircraft:fuselage:fineness                           
+        parameter_vals:aircraft:fuselage:laminar_flow_lower              [[0.]]                    traj.res_cruise.parameter_vals:aircraft:fuselage:laminar_flow_lower                 
+        parameter_vals:aircraft:fuselage:laminar_flow_upper              [[0.]]                    traj.res_cruise.parameter_vals:aircraft:fuselage:laminar_flow_upper                 
+        parameter_vals:aircraft:fuselage:length_to_diameter              [[10.78075253]]           traj.res_cruise.parameter_vals:aircraft:fuselage:length_to_diameter                 
+        parameter_vals:aircraft:fuselage:wetted_area                     [[3371.31693671]]         traj.res_cruise.parameter_vals:aircraft:fuselage:wetted_area                        
+        parameter_vals:aircraft:horizontal_tail:characteristic_length    [[7.89521597]]            traj.res_cruise.parameter_vals:aircraft:horizontal_tail:characteristic_length       
+        parameter_vals:aircraft:horizontal_tail:fineness                 [[0.1736]]                traj.res_cruise.parameter_vals:aircraft:horizontal_tail:fineness                    
+        parameter_vals:aircraft:horizontal_tail:laminar_flow_lower       [[0.]]                    traj.res_cruise.parameter_vals:aircraft:horizontal_tail:laminar_flow_lower          
+        parameter_vals:aircraft:horizontal_tail:laminar_flow_upper       [[0.]]                    traj.res_cruise.parameter_vals:aircraft:horizontal_tail:laminar_flow_upper          
+        parameter_vals:aircraft:horizontal_tail:wetted_area              [[447.9761705]]           traj.res_cruise.parameter_vals:aircraft:horizontal_tail:wetted_area                 
+        parameter_vals:aircraft:nacelle:characteristic_length            [[11.25844183]]           traj.res_cruise.parameter_vals:aircraft:nacelle:characteristic_length               
+        parameter_vals:aircraft:nacelle:fineness                         [[1.64564955]]            traj.res_cruise.parameter_vals:aircraft:nacelle:fineness                            
+        parameter_vals:aircraft:nacelle:laminar_flow_lower               [[0.]]                    traj.res_cruise.parameter_vals:aircraft:nacelle:laminar_flow_lower                  
+        parameter_vals:aircraft:nacelle:laminar_flow_upper               [[0.]]                    traj.res_cruise.parameter_vals:aircraft:nacelle:laminar_flow_upper                  
+        parameter_vals:aircraft:nacelle:wetted_area                      [[215.66379922]]          traj.res_cruise.parameter_vals:aircraft:nacelle:wetted_area                         
+        parameter_vals:aircraft:vertical_tail:characteristic_length      [[10.99965931]]           traj.res_cruise.parameter_vals:aircraft:vertical_tail:characteristic_length         
+        parameter_vals:aircraft:vertical_tail:fineness                   [[0.201]]                 traj.res_cruise.parameter_vals:aircraft:vertical_tail:fineness                      
+        parameter_vals:aircraft:vertical_tail:laminar_flow_lower         [[0.]]                    traj.res_cruise.parameter_vals:aircraft:vertical_tail:laminar_flow_lower            
+        parameter_vals:aircraft:vertical_tail:laminar_flow_upper         [[0.]]                    traj.res_cruise.parameter_vals:aircraft:vertical_tail:laminar_flow_upper            
+        parameter_vals:aircraft:vertical_tail:wetted_area                [[415.91062379]]          traj.res_cruise.parameter_vals:aircraft:vertical_tail:wetted_area                   
+        parameter_vals:aircraft:wing:area                                [[1220.15]]               traj.res_cruise.parameter_vals:aircraft:wing:area                                   
+        parameter_vals:aircraft:wing:aspect_ratio                        [[8.74047691]]            traj.res_cruise.parameter_vals:aircraft:wing:aspect_ratio                           
+        parameter_vals:aircraft:wing:characteristic_length               [[11.81514477]]           traj.res_cruise.parameter_vals:aircraft:wing:characteristic_length                  
+        parameter_vals:aircraft:wing:fineness                            [[0.116375]]              traj.res_cruise.parameter_vals:aircraft:wing:fineness                               
+        parameter_vals:aircraft:wing:laminar_flow_lower                  [[0.]]                    traj.res_cruise.parameter_vals:aircraft:wing:laminar_flow_lower                     
+        parameter_vals:aircraft:wing:laminar_flow_upper                  [[0.]]                    traj.res_cruise.parameter_vals:aircraft:wing:laminar_flow_upper                     
+        parameter_vals:aircraft:wing:max_camber_at_70_semispan           [[2.]]                    traj.res_cruise.parameter_vals:aircraft:wing:max_camber_at_70_semispan              
+        parameter_vals:aircraft:wing:span_efficiency_factor              [[0.88]]                  traj.res_cruise.parameter_vals:aircraft:wing:span_efficiency_factor                 
+        parameter_vals:aircraft:wing:sweep                               [[27.3292]]               traj.res_cruise.parameter_vals:aircraft:wing:sweep                                  
+        parameter_vals:aircraft:wing:taper_ratio                         [[0.301823]]              traj.res_cruise.parameter_vals:aircraft:wing:taper_ratio                            
+        parameter_vals:aircraft:wing:thickness_to_chord                  [[0.116375]]              traj.res_cruise.parameter_vals:aircraft:wing:thickness_to_chord                     
+        parameter_vals:aircraft:wing:wetted_area                         [[2100.18181169]]         traj.res_cruise.parameter_vals:aircraft:wing:wetted_area                            
+      time
+        t                                                                |115022.43039643|         traj.res_cruise.t                                                                   
+        t_phase                                                          |4393.89587892|           traj.res_cruise.t_phase                                                             
+        dt_dstau                                                         |761.8818867|             traj.res_cruise.dt_dstau                                                            
+      control_comp
+        control_values:mach                                              |3.48826604|              traj.res_cruise.control_values:mach                                                 
+        control_rates:mach_rate                                          |0.0|                     traj.res_cruise.control_rates:mach_rate                                             
+        control_rates:mach_rate2                                         |0.0|                     traj.res_cruise.control_rates:mach_rate2                                            
+        control_boundary_values:mach                                     |1.10308658|              traj.res_cruise.control_comp.control_boundary_values:mach                           
+        control_boundary_rates:mach_rate                                 |0.0|                     traj.res_cruise.control_comp.control_boundary_rates:mach_rate                       
+        control_boundary_rates:mach_rate2                                |0.0|                     traj.res_cruise.control_comp.control_boundary_rates:mach_rate2                      
+        control_values:altitude                                          |174413.30224498|         traj.res_cruise.control_values:altitude                                             
+        control_rates:altitude_rate                                      |0.0|                     traj.res_cruise.control_rates:altitude_rate                                         
+        control_rates:altitude_rate2                                     |0.0|                     traj.res_cruise.control_rates:altitude_rate2                                        
+        control_boundary_values:altitude                                 |55154.32893255|          traj.res_cruise.control_comp.control_boundary_values:altitude                       
+        control_boundary_rates:altitude_rate                             |0.0|                     traj.res_cruise.control_comp.control_boundary_rates:altitude_rate                   
+        control_boundary_rates:altitude_rate2                            |0.0|                     traj.res_cruise.control_comp.control_boundary_rates:altitude_rate2                  
+      state_interp
+        staterate_col:mass                                               |1.66421515|              traj.res_cruise.state_interp.staterate_col:mass                                     
+        staterate_col:distance                                           |891.29755857|            traj.res_cruise.state_interp.staterate_col:distance                                 
+      rhs_all
+        atmosphere
+          standard_atmosphere
+            temperature                                                  |968.88825465|            traj.res_cruise.rhs_all.temperature                                                 
+            static_pressure                                              |88308.06023117|          traj.res_cruise.rhs_all.static_pressure                                             
+            density                                                      |1.41997093|              traj.res_cruise.rhs_all.density                                                     
+            dynamic_viscosity                                            |6.358e-05|               traj.res_cruise.rhs_all.dynamic_viscosity                                           
+            speed_of_sound                                               |1319.46380863|           traj.res_cruise.rhs_all.speed_of_sound                                              
+            dsos_dh                                                      |0.0|                     traj.res_cruise.rhs_all.dsos_dh                                                     
+          flight_conditions
+            dynamic_pressure                                             |785.32087508|            traj.res_cruise.rhs_all.dynamic_pressure                                            
+            EAS                                                          |1719.05832685|           traj.res_cruise.rhs_all.EAS                                                         
+            velocity                                                     |3376.58061264|           traj.res_cruise.rhs_all.velocity                                                    
+        velocity_rate_comp
+          velocity_rate                                                  |0.0|                     traj.res_cruise.rhs_all.velocity_rate                                               
+        solver_sub
+          propulsion
+            engine_RegionalJet
+              interpolation
+                fuel_flow_rate_unscaled                                  |7622.74426968|           traj.res_cruise.rhs_all.engine_RegionalJet.interpolation.fuel_flow_rate_unscaled    
+                nox_rate_unscaled                                        |42.85524088|             traj.res_cruise.rhs_all.engine_RegionalJet.interpolation.nox_rate_unscaled          
+                thrust_net_unscaled                                      |13132.89271347|          traj.res_cruise.rhs_all.engine_RegionalJet.interpolation.thrust_net_unscaled        
+              interp_max_throttles
+                throttle_max                                             |4.47213595|              traj.res_cruise.rhs_all.engine_RegionalJet.interp_max_throttles.throttle_max        
+              max_interpolation
+                thrust_net_max_unscaled                                  |14980.76102206|          traj.res_cruise.rhs_all.engine_RegionalJet.max_interpolation.thrust_net_max_unscaled
+              engine_scaling
+                fuel_flow_rate_negative                                  |7622.93632673|           traj.res_cruise.rhs_all.engine_RegionalJet.fuel_flow_rate_negative                  
+                nox_rate                                                 |42.85632063|             traj.res_cruise.rhs_all.engine_RegionalJet.nox_rate                                 
+                thrust_net                                               |13133.22360016|          traj.res_cruise.rhs_all.engine_RegionalJet.thrust_net                               
+                thrust_net_max                                           |14981.13846628|          traj.res_cruise.rhs_all.engine_RegionalJet.thrust_net_max                           
+            vectorize_performance
+              thrust_net                                                 |13133.22360016|          traj.res_cruise.rhs_all.thrust_net                                                  
+              thrust_net_max                                             |14981.13846628|          traj.res_cruise.rhs_all.thrust_net_max                                              
+              fuel_flow_rate_negative                                    |7622.93632673|           traj.res_cruise.rhs_all.fuel_flow_rate_negative                                     
+              electric_power_in                                          |0.0|                     traj.res_cruise.rhs_all.electric_power_in                                           
+              nox_rate                                                   |42.85632063|             traj.res_cruise.rhs_all.nox_rate                                                    
+              t4                                                         |0.0|                     traj.res_cruise.rhs_all.t4                                                          
+              shaft_power                                                |0.0|                     traj.res_cruise.rhs_all.shaft_power                                                 
+              shaft_power_max                                            |0.0|                     traj.res_cruise.rhs_all.shaft_power_max                                             
+              rotations_per_minute                                       |0.0|                     traj.res_cruise.rhs_all.rotations_per_minute                                        
+              propeller_tip_speed                                        |0.0|                     traj.res_cruise.rhs_all.propeller_tip_speed                                         
+            propulsion_sum
+              thrust_net_total                                           |26266.44720032|          traj.res_cruise.rhs_all.thrust_net_total                                            
+              thrust_net_max_total                                       |29962.27693255|          traj.res_cruise.rhs_all.thrust_net_max_total                                        
+              fuel_flow_rate_negative_total                              |15245.87265345|          traj.res_cruise.rhs_all.fuel_flow_rate_negative_total                               
+              electric_power_in_total                                    |0.0|                     traj.res_cruise.rhs_all.electric_power_in_total                                     
+              nox_rate_total                                             |85.71264126|             traj.res_cruise.rhs_all.nox_rate_total                                              
+          aerodynamics
+            Mux
+              wetted_areas                                               |4030.28877064|           traj.res_cruise.rhs_all.aerodynamics.wetted_areas                                   
+              fineness_ratios                                            |11.03290674|             traj.res_cruise.rhs_all.aerodynamics.fineness_ratios                                
+              characteristic_lengths                                     |121.58602911|            traj.res_cruise.rhs_all.aerodynamics.characteristic_lengths                         
+              laminar_fractions_upper                                    |0.0|                     traj.res_cruise.rhs_all.aerodynamics.laminar_fractions_upper                        
+              laminar_fractions_lower                                    |0.0|                     traj.res_cruise.rhs_all.aerodynamics.laminar_fractions_lower                        
+            DynamicPressure
+              dynamic_pressure                                           |785.47270738|            traj.res_cruise.rhs_all.aerodynamics.dynamic_pressure                               
+            lift
+              lift_coefficient                                           |2.02379944|              traj.res_cruise.rhs_all.lift_coefficient                                            
+              lift                                                       |1929226.48018774|        traj.res_cruise.rhs_all.lift                                                        
+            PressureDrag
+              pressure_drag_coeff                                        |0.00607066|              traj.res_cruise.rhs_all.aerodynamics.PressureDrag.pressure_drag_coeff               
+            InducedDrag
+              induced_drag_coeff                                         |0.03790325|              traj.res_cruise.rhs_all.aerodynamics.InducedDrag.induced_drag_coeff                 
+            CompressibilityDrag
+              compress_drag_coeff                                        |0.006559|                traj.res_cruise.rhs_all.aerodynamics.CompressibilityDrag.compress_drag_coeff        
+            SkinFrictionDrag
+              skin_friction_drag_coeff                                   |0.08439614|              traj.res_cruise.rhs_all.aerodynamics.SkinFrictionDrag.skin_friction_drag_coeff      
+            Drag
+              CDI
+                CDI                                                      |0.04397383|              traj.res_cruise.rhs_all.aerodynamics.CDI                                            
+              CD0
+                CD0                                                      |0.09095514|              traj.res_cruise.rhs_all.aerodynamics.CD0                                            
+              drag
+                total_drag_coeff
+                  CD_prescaled                                           |0.13447573|              traj.res_cruise.rhs_all.aerodynamics.Drag.drag.CD_prescaled                         
+                simple_CD
+                  drag_coefficient                                       |0.12256656|              traj.res_cruise.rhs_all.drag_coefficient                                            
+                simple_drag
+                  drag                                                   |116838.97831705|         traj.res_cruise.rhs_all.drag                                                        
+            Buffet
+              DELCLB                                                     |3.57957441|              traj.res_cruise.rhs_all.aerodynamics.Buffet.DELCLB                                  
+          mission_EOM
+            required_thrust
+              thrust_required                                            |116838.97831705|         traj.res_cruise.rhs_all.thrust_required                                             
+            groundspeed
+              distance_rate                                              |1029.18177073|           traj.res_cruise.rhs_all.distance_rate                                               
+            excess_specific_power
+              specific_energy_rate                                       |8.77965752|              traj.res_cruise.rhs_all.specific_energy_rate_excess                                 
+            altitude_rate_max
+              altitude_rate                                              |8.77965752|              traj.res_cruise.rhs_all.altitude_rate_max                                           
+      timeseries
+        mach                                                             |3.48826604|              traj.res_cruise.timeseries.mach                                                     
+        altitude                                                         |174413.30224498|         traj.res_cruise.timeseries.altitude                                                 
+        altitude_rate                                                    |0.0|                     traj.res_cruise.timeseries.altitude_rate                                            
+        drag                                                             |26266.44720032|          traj.res_cruise.timeseries.drag                                                     
+        electric_power_in_total                                          |0.0|                     traj.res_cruise.timeseries.electric_power_in_total                                  
+        fuel_flow_rate_negative_total                                    |15245.87265345|          traj.res_cruise.timeseries.fuel_flow_rate_negative_total                            
+        lift                                                             |433707.36554887|         traj.res_cruise.timeseries.lift                                                     
+        throttle                                                         |3.9015675|               traj.res_cruise.timeseries.throttle                                                 
+        specific_energy_rate_excess                                      |8.77965752|              traj.res_cruise.timeseries.specific_energy_rate_excess                              
+        thrust_net_total                                                 |26266.44720032|          traj.res_cruise.timeseries.thrust_net_total                                         
+        velocity                                                         |1029.18177073|           traj.res_cruise.timeseries.velocity                                                 
+        drag_coefficient                                                 |0.12256656|              traj.res_cruise.timeseries.drag_coefficient                                         
+        lift_coefficient                                                 |2.02379944|              traj.res_cruise.timeseries.lift_coefficient                                         
+        time                                                             |115022.43039643|         traj.res_cruise.timeseries.time                                                     
+        time_phase                                                       |4393.89587892|           traj.res_cruise.timeseries.time_phase                                               
+        mach_rate                                                        |0.0|                     traj.res_cruise.timeseries.mach_rate                                                
+        mass                                                             |196726.35203538|         traj.res_cruise.timeseries.mass                                                     
+        distance                                                         |24455946.2271401|        traj.res_cruise.timeseries.distance                                                 
+      mission_bus_variables
+        mach                                                             |3.02092701|              traj.res_cruise.mission_bus_variables.mach                                          
+        altitude                                                         |151046.35050209|         traj.res_cruise.mission_bus_variables.altitude                                      
+        altitude_rate                                                    |0.0|                     traj.res_cruise.mission_bus_variables.altitude_rate                                 
+        drag                                                             |22750.50472561|          traj.res_cruise.mission_bus_variables.drag                                          
+        electric_power_in_total                                          |0.0|                     traj.res_cruise.mission_bus_variables.electric_power_in_total                       
+        fuel_flow_rate_negative_total                                    |13204.88684464|          traj.res_cruise.mission_bus_variables.fuel_flow_rate_negative_total                 
+        lift                                                             |375658.47149278|         traj.res_cruise.mission_bus_variables.lift                                          
+        throttle                                                         |3.379334|                traj.res_cruise.mission_bus_variables.throttle                                      
+        specific_energy_rate_excess                                      |7.59302866|              traj.res_cruise.mission_bus_variables.specific_energy_rate_excess                   
+        thrust_net_total                                                 |22750.50472561|          traj.res_cruise.mission_bus_variables.thrust_net_total                              
+        velocity                                                         |891.29755857|            traj.res_cruise.mission_bus_variables.velocity                                      
+        drag_coefficient                                                 |0.1061602|               traj.res_cruise.mission_bus_variables.drag_coefficient                              
+        lift_coefficient                                                 |1.75292712|              traj.res_cruise.mission_bus_variables.lift_coefficient                              
+        time                                                             |99544.97591921|          traj.res_cruise.mission_bus_variables.time                                          
+        time_phase                                                       |3616.92563542|           traj.res_cruise.mission_bus_variables.time_phase                                    
+        mach_rate                                                        |0.0|                     traj.res_cruise.mission_bus_variables.mach_rate                                     
+        mass                                                             |170395.81657654|         traj.res_cruise.mission_bus_variables.mass                                          
+        distance                                                         |21163871.30011898|       traj.res_cruise.mission_bus_variables.distance                                      
+      collocation_constraint
+        defects:mass                                                     |0.0|                     traj.res_cruise.collocation_constraint.defects:mass                                 
+        defects:distance                                                 |0.0|                     traj.res_cruise.collocation_constraint.defects:distance                             
+    res_hold
+      param_comp
+        t_initial_val                                                    [26502.78974997]          traj.res_hold.t_initial_val                                                         
+        t_duration_val                                                   [1800.]                   traj.res_hold.t_duration_val                                                        
+        parameter_vals:aircraft:engine:scale_factor                      [[1.0000252]]             traj.res_hold.parameter_vals:aircraft:engine:scale_factor                           
+        parameter_vals:aircraft:design:base_area                         [[0.]]                    traj.res_hold.parameter_vals:aircraft:design:base_area                              
+        parameter_vals:aircraft:design:lift_coefficient                  [[0.59132131]]            traj.res_hold.parameter_vals:aircraft:design:lift_coefficient                       
+        parameter_vals:aircraft:design:lift_dependent_drag_coeff_factor  [[1.3]]                   traj.res_hold.parameter_vals:aircraft:design:lift_dependent_drag_coeff_factor       
+        parameter_vals:aircraft:design:mach                              [[0.81850872]]            traj.res_hold.parameter_vals:aircraft:design:mach                                   
+        parameter_vals:aircraft:design:percent_excrescence_drag          [[0.06]]                  traj.res_hold.parameter_vals:aircraft:design:percent_excrescence_drag               
+        parameter_vals:aircraft:design:subsonic_drag_coeff_factor        [[0.91144]]               traj.res_hold.parameter_vals:aircraft:design:subsonic_drag_coeff_factor             
+        parameter_vals:aircraft:design:supersonic_drag_coeff_factor      [[1.]]                    traj.res_hold.parameter_vals:aircraft:design:supersonic_drag_coeff_factor           
+        parameter_vals:aircraft:design:zero_lift_drag_coeff_factor       [[0.85]]                  traj.res_hold.parameter_vals:aircraft:design:zero_lift_drag_coeff_factor            
+        parameter_vals:aircraft:fuselage:characteristic_length           [[119.192]]               traj.res_hold.parameter_vals:aircraft:fuselage:characteristic_length                
+        parameter_vals:aircraft:fuselage:cross_section                   [[96.00325132]]           traj.res_hold.parameter_vals:aircraft:fuselage:cross_section                        
+        parameter_vals:aircraft:fuselage:diameter_to_wing_span           [[0.10705917]]            traj.res_hold.parameter_vals:aircraft:fuselage:diameter_to_wing_span                
+        parameter_vals:aircraft:fuselage:fineness                        [[10.78075253]]           traj.res_hold.parameter_vals:aircraft:fuselage:fineness                             
+        parameter_vals:aircraft:fuselage:laminar_flow_lower              [[0.]]                    traj.res_hold.parameter_vals:aircraft:fuselage:laminar_flow_lower                   
+        parameter_vals:aircraft:fuselage:laminar_flow_upper              [[0.]]                    traj.res_hold.parameter_vals:aircraft:fuselage:laminar_flow_upper                   
+        parameter_vals:aircraft:fuselage:length_to_diameter              [[10.78075253]]           traj.res_hold.parameter_vals:aircraft:fuselage:length_to_diameter                   
+        parameter_vals:aircraft:fuselage:wetted_area                     [[3371.31693671]]         traj.res_hold.parameter_vals:aircraft:fuselage:wetted_area                          
+        parameter_vals:aircraft:horizontal_tail:characteristic_length    [[7.89521597]]            traj.res_hold.parameter_vals:aircraft:horizontal_tail:characteristic_length         
+        parameter_vals:aircraft:horizontal_tail:fineness                 [[0.1736]]                traj.res_hold.parameter_vals:aircraft:horizontal_tail:fineness                      
+        parameter_vals:aircraft:horizontal_tail:laminar_flow_lower       [[0.]]                    traj.res_hold.parameter_vals:aircraft:horizontal_tail:laminar_flow_lower            
+        parameter_vals:aircraft:horizontal_tail:laminar_flow_upper       [[0.]]                    traj.res_hold.parameter_vals:aircraft:horizontal_tail:laminar_flow_upper            
+        parameter_vals:aircraft:horizontal_tail:wetted_area              [[447.9761705]]           traj.res_hold.parameter_vals:aircraft:horizontal_tail:wetted_area                   
+        parameter_vals:aircraft:nacelle:characteristic_length            [[11.25844183]]           traj.res_hold.parameter_vals:aircraft:nacelle:characteristic_length                 
+        parameter_vals:aircraft:nacelle:fineness                         [[1.64564955]]            traj.res_hold.parameter_vals:aircraft:nacelle:fineness                              
+        parameter_vals:aircraft:nacelle:laminar_flow_lower               [[0.]]                    traj.res_hold.parameter_vals:aircraft:nacelle:laminar_flow_lower                    
+        parameter_vals:aircraft:nacelle:laminar_flow_upper               [[0.]]                    traj.res_hold.parameter_vals:aircraft:nacelle:laminar_flow_upper                    
+        parameter_vals:aircraft:nacelle:wetted_area                      [[215.66379922]]          traj.res_hold.parameter_vals:aircraft:nacelle:wetted_area                           
+        parameter_vals:aircraft:vertical_tail:characteristic_length      [[10.99965931]]           traj.res_hold.parameter_vals:aircraft:vertical_tail:characteristic_length           
+        parameter_vals:aircraft:vertical_tail:fineness                   [[0.201]]                 traj.res_hold.parameter_vals:aircraft:vertical_tail:fineness                        
+        parameter_vals:aircraft:vertical_tail:laminar_flow_lower         [[0.]]                    traj.res_hold.parameter_vals:aircraft:vertical_tail:laminar_flow_lower              
+        parameter_vals:aircraft:vertical_tail:laminar_flow_upper         [[0.]]                    traj.res_hold.parameter_vals:aircraft:vertical_tail:laminar_flow_upper              
+        parameter_vals:aircraft:vertical_tail:wetted_area                [[415.91062379]]          traj.res_hold.parameter_vals:aircraft:vertical_tail:wetted_area                     
+        parameter_vals:aircraft:wing:area                                [[1220.15]]               traj.res_hold.parameter_vals:aircraft:wing:area                                     
+        parameter_vals:aircraft:wing:aspect_ratio                        [[8.74047691]]            traj.res_hold.parameter_vals:aircraft:wing:aspect_ratio                             
+        parameter_vals:aircraft:wing:characteristic_length               [[11.81514477]]           traj.res_hold.parameter_vals:aircraft:wing:characteristic_length                    
+        parameter_vals:aircraft:wing:fineness                            [[0.116375]]              traj.res_hold.parameter_vals:aircraft:wing:fineness                                 
+        parameter_vals:aircraft:wing:laminar_flow_lower                  [[0.]]                    traj.res_hold.parameter_vals:aircraft:wing:laminar_flow_lower                       
+        parameter_vals:aircraft:wing:laminar_flow_upper                  [[0.]]                    traj.res_hold.parameter_vals:aircraft:wing:laminar_flow_upper                       
+        parameter_vals:aircraft:wing:max_camber_at_70_semispan           [[2.]]                    traj.res_hold.parameter_vals:aircraft:wing:max_camber_at_70_semispan                
+        parameter_vals:aircraft:wing:span_efficiency_factor              [[0.88]]                  traj.res_hold.parameter_vals:aircraft:wing:span_efficiency_factor                   
+        parameter_vals:aircraft:wing:sweep                               [[27.3292]]               traj.res_hold.parameter_vals:aircraft:wing:sweep                                    
+        parameter_vals:aircraft:wing:taper_ratio                         [[0.301823]]              traj.res_hold.parameter_vals:aircraft:wing:taper_ratio                              
+        parameter_vals:aircraft:wing:thickness_to_chord                  [[0.116375]]              traj.res_hold.parameter_vals:aircraft:wing:thickness_to_chord                       
+        parameter_vals:aircraft:wing:wetted_area                         [[2100.18181169]]         traj.res_hold.parameter_vals:aircraft:wing:wetted_area                              
+      time
+        t                                                                |122659.22864873|         traj.res_hold.t                                                                     
+        t_phase                                                          |4913.92332705|           traj.res_hold.t_phase                                                               
+        dt_dstau                                                         |852.05231955|            traj.res_hold.dt_dstau                                                              
+      control_comp
+        control_values:mach                                              |3.48826604|              traj.res_hold.control_values:mach                                                   
+        control_rates:mach_rate                                          |0.0|                     traj.res_hold.control_rates:mach_rate                                               
+        control_rates:mach_rate2                                         |0.0|                     traj.res_hold.control_rates:mach_rate2                                              
+        control_boundary_values:mach                                     |1.10308658|              traj.res_hold.control_comp.control_boundary_values:mach                             
+        control_boundary_rates:mach_rate                                 |0.0|                     traj.res_hold.control_comp.control_boundary_rates:mach_rate                         
+        control_boundary_rates:mach_rate2                                |0.0|                     traj.res_hold.control_comp.control_boundary_rates:mach_rate2                        
+        control_values:altitude                                          |174413.30224498|         traj.res_hold.control_values:altitude                                               
+        control_rates:altitude_rate                                      |0.0|                     traj.res_hold.control_rates:altitude_rate                                           
+        control_rates:altitude_rate2                                     |0.0|                     traj.res_hold.control_rates:altitude_rate2                                          
+        control_boundary_values:altitude                                 |55154.32893255|          traj.res_hold.control_comp.control_boundary_values:altitude                         
+        control_boundary_rates:altitude_rate                             |0.0|                     traj.res_hold.control_comp.control_boundary_rates:altitude_rate                     
+        control_boundary_rates:altitude_rate2                            |0.0|                     traj.res_hold.control_comp.control_boundary_rates:altitude_rate2                    
+      state_interp
+        staterate_col:mass                                               |1.64277288|              traj.res_hold.state_interp.staterate_col:mass                                       
+        staterate_col:distance                                           |891.29755857|            traj.res_hold.state_interp.staterate_col:distance                                   
+      rhs_all
+        atmosphere
+          standard_atmosphere
+            temperature                                                  |968.88825465|            traj.res_hold.rhs_all.temperature                                                   
+            static_pressure                                              |88308.06023117|          traj.res_hold.rhs_all.static_pressure                                               
+            density                                                      |1.41997093|              traj.res_hold.rhs_all.density                                                       
+            dynamic_viscosity                                            |6.358e-05|               traj.res_hold.rhs_all.dynamic_viscosity                                             
+            speed_of_sound                                               |1319.46380863|           traj.res_hold.rhs_all.speed_of_sound                                                
+            dsos_dh                                                      |0.0|                     traj.res_hold.rhs_all.dsos_dh                                                       
+          flight_conditions
+            dynamic_pressure                                             |785.32087508|            traj.res_hold.rhs_all.dynamic_pressure                                              
+            EAS                                                          |1719.05832685|           traj.res_hold.rhs_all.EAS                                                           
+            velocity                                                     |3376.58061264|           traj.res_hold.rhs_all.velocity                                                      
+        velocity_rate_comp
+          velocity_rate                                                  |0.0|                     traj.res_hold.rhs_all.velocity_rate                                                 
+        solver_sub
+          propulsion
+            engine_RegionalJet
+              interpolation
+                fuel_flow_rate_unscaled                                  |7524.36647272|           traj.res_hold.rhs_all.engine_RegionalJet.interpolation.fuel_flow_rate_unscaled      
+                nox_rate_unscaled                                        |42.52909972|             traj.res_hold.rhs_all.engine_RegionalJet.interpolation.nox_rate_unscaled            
+                thrust_net_unscaled                                      |12935.86142269|          traj.res_hold.rhs_all.engine_RegionalJet.interpolation.thrust_net_unscaled          
+              interp_max_throttles
+                throttle_max                                             |4.47213595|              traj.res_hold.rhs_all.engine_RegionalJet.interp_max_throttles.throttle_max          
+              max_interpolation
+                thrust_net_max_unscaled                                  |14980.76102206|          traj.res_hold.rhs_all.engine_RegionalJet.max_interpolation.thrust_net_max_unscaled  
+              engine_scaling
+                fuel_flow_rate_negative                                  |7524.55605111|           traj.res_hold.rhs_all.engine_RegionalJet.fuel_flow_rate_negative                    
+                nox_rate                                                 |42.53017125|             traj.res_hold.rhs_all.engine_RegionalJet.nox_rate                                   
+                thrust_net                                               |12936.18734512|          traj.res_hold.rhs_all.engine_RegionalJet.thrust_net                                 
+                thrust_net_max                                           |14981.13846628|          traj.res_hold.rhs_all.engine_RegionalJet.thrust_net_max                             
+            vectorize_performance
+              thrust_net                                                 |12936.18734512|          traj.res_hold.rhs_all.thrust_net                                                    
+              thrust_net_max                                             |14981.13846628|          traj.res_hold.rhs_all.thrust_net_max                                                
+              fuel_flow_rate_negative                                    |7524.55605111|           traj.res_hold.rhs_all.fuel_flow_rate_negative                                       
+              electric_power_in                                          |0.0|                     traj.res_hold.rhs_all.electric_power_in                                             
+              nox_rate                                                   |42.53017125|             traj.res_hold.rhs_all.nox_rate                                                      
+              t4                                                         |0.0|                     traj.res_hold.rhs_all.t4                                                            
+              shaft_power                                                |0.0|                     traj.res_hold.rhs_all.shaft_power                                                   
+              shaft_power_max                                            |0.0|                     traj.res_hold.rhs_all.shaft_power_max                                               
+              rotations_per_minute                                       |0.0|                     traj.res_hold.rhs_all.rotations_per_minute                                          
+              propeller_tip_speed                                        |0.0|                     traj.res_hold.rhs_all.propeller_tip_speed                                           
+            propulsion_sum
+              thrust_net_total                                           |25872.37469024|          traj.res_hold.rhs_all.thrust_net_total                                              
+              thrust_net_max_total                                       |29962.27693255|          traj.res_hold.rhs_all.thrust_net_max_total                                          
+              fuel_flow_rate_negative_total                              |15049.11210222|          traj.res_hold.rhs_all.fuel_flow_rate_negative_total                                 
+              electric_power_in_total                                    |0.0|                     traj.res_hold.rhs_all.electric_power_in_total                                       
+              nox_rate_total                                             |85.0603425|              traj.res_hold.rhs_all.nox_rate_total                                                
+          aerodynamics
+            Mux
+              wetted_areas                                               |4030.28877064|           traj.res_hold.rhs_all.aerodynamics.wetted_areas                                     
+              fineness_ratios                                            |11.03290674|             traj.res_hold.rhs_all.aerodynamics.fineness_ratios                                  
+              characteristic_lengths                                     |121.58602911|            traj.res_hold.rhs_all.aerodynamics.characteristic_lengths                           
+              laminar_fractions_upper                                    |0.0|                     traj.res_hold.rhs_all.aerodynamics.laminar_fractions_upper                          
+              laminar_fractions_lower                                    |0.0|                     traj.res_hold.rhs_all.aerodynamics.laminar_fractions_lower                          
+            DynamicPressure
+              dynamic_pressure                                           |785.47270738|            traj.res_hold.rhs_all.aerodynamics.dynamic_pressure                                 
+            lift
+              lift_coefficient                                           |1.99030597|              traj.res_hold.rhs_all.lift_coefficient                                              
+              lift                                                       |1897298.16844606|        traj.res_hold.rhs_all.lift                                                          
+            PressureDrag
+              pressure_drag_coeff                                        |0.00576283|              traj.res_hold.rhs_all.aerodynamics.PressureDrag.pressure_drag_coeff                 
+            InducedDrag
+              induced_drag_coeff                                         |0.03665958|              traj.res_hold.rhs_all.aerodynamics.InducedDrag.induced_drag_coeff                   
+            CompressibilityDrag
+              compress_drag_coeff                                        |0.006559|                traj.res_hold.rhs_all.aerodynamics.CompressibilityDrag.compress_drag_coeff          
+            SkinFrictionDrag
+              skin_friction_drag_coeff                                   |0.08439614|              traj.res_hold.rhs_all.aerodynamics.SkinFrictionDrag.skin_friction_drag_coeff        
+            Drag
+              CDI
+                CDI                                                      |0.04242228|              traj.res_hold.rhs_all.aerodynamics.CDI                                              
+              CD0
+                CD0                                                      |0.09095514|              traj.res_hold.rhs_all.aerodynamics.CD0                                              
+              drag
+                total_drag_coeff
+                  CD_prescaled                                           |0.13245821|              traj.res_hold.rhs_all.aerodynamics.Drag.drag.CD_prescaled                           
+                simple_CD
+                  drag_coefficient                                       |0.12072771|              traj.res_hold.rhs_all.drag_coefficient                                              
+                simple_drag
+                  drag                                                   |115086.05645788|         traj.res_hold.rhs_all.drag                                                          
+            Buffet
+              DELCLB                                                     |3.57957441|              traj.res_hold.rhs_all.aerodynamics.Buffet.DELCLB                                    
+          mission_EOM
+            required_thrust
+              thrust_required                                            |115086.05645788|         traj.res_hold.rhs_all.thrust_required                                               
+            groundspeed
+              distance_rate                                              |1029.18177073|           traj.res_hold.rhs_all.distance_rate                                                 
+            excess_specific_power
+              specific_energy_rate                                       |9.87969052|              traj.res_hold.rhs_all.specific_energy_rate_excess                                   
+            altitude_rate_max
+              altitude_rate                                              |9.87969052|              traj.res_hold.rhs_all.altitude_rate_max                                             
+      timeseries
+        mach                                                             |3.48826604|              traj.res_hold.timeseries.mach                                                       
+        altitude                                                         |174413.30224498|         traj.res_hold.timeseries.altitude                                                   
+        altitude_rate                                                    |0.0|                     traj.res_hold.timeseries.altitude_rate                                              
+        drag                                                             |25872.37469024|          traj.res_hold.timeseries.drag                                                       
+        electric_power_in_total                                          |0.0|                     traj.res_hold.timeseries.electric_power_in_total                                    
+        fuel_flow_rate_negative_total                                    |15049.11210222|          traj.res_hold.timeseries.fuel_flow_rate_negative_total                              
+        lift                                                             |426529.59553892|         traj.res_hold.timeseries.lift                                                       
+        throttle                                                         |3.84071541|              traj.res_hold.timeseries.throttle                                                   
+        specific_energy_rate_excess                                      |9.87969052|              traj.res_hold.timeseries.specific_energy_rate_excess                                
+        thrust_net_total                                                 |25872.37469024|          traj.res_hold.timeseries.thrust_net_total                                           
+        velocity                                                         |1029.18177073|           traj.res_hold.timeseries.velocity                                                   
+        drag_coefficient                                                 |0.12072771|              traj.res_hold.timeseries.drag_coefficient                                           
+        lift_coefficient                                                 |1.99030597|              traj.res_hold.timeseries.lift_coefficient                                           
+        time                                                             |122659.22864873|         traj.res_hold.timeseries.time                                                       
+        time_phase                                                       |4913.92332705|           traj.res_hold.timeseries.time_phase                                                 
+        mach_rate                                                        |0.0|                     traj.res_hold.timeseries.mach_rate                                                  
+        mass                                                             |193470.57032178|         traj.res_hold.timeseries.mass                                                       
+        distance                                                         |26213463.47003387|       traj.res_hold.timeseries.distance                                                   
+      mission_bus_variables
+        mach                                                             |3.02092701|              traj.res_hold.mission_bus_variables.mach                                            
+        altitude                                                         |151046.35050209|         traj.res_hold.mission_bus_variables.altitude                                        
+        altitude_rate                                                    |0.0|                     traj.res_hold.mission_bus_variables.altitude_rate                                   
+        drag                                                             |22409.4833807|           traj.res_hold.mission_bus_variables.drag                                            
+        electric_power_in_total                                          |0.0|                     traj.res_hold.mission_bus_variables.electric_power_in_total                         
+        fuel_flow_rate_negative_total                                    |13034.39640396|          traj.res_hold.mission_bus_variables.fuel_flow_rate_negative_total                   
+        lift                                                             |369448.03288042|         traj.res_hold.mission_bus_variables.lift                                            
+        throttle                                                         |3.32667391|              traj.res_hold.mission_bus_variables.throttle                                        
+        specific_energy_rate_excess                                      |8.5443338|               traj.res_hold.mission_bus_variables.specific_energy_rate_excess                     
+        thrust_net_total                                                 |22409.4833807|           traj.res_hold.mission_bus_variables.thrust_net_total                                
+        velocity                                                         |891.29755857|            traj.res_hold.mission_bus_variables.velocity                                        
+        drag_coefficient                                                 |0.1045689|               traj.res_hold.mission_bus_variables.drag_coefficient                                
+        lift_coefficient                                                 |1.72394749|              traj.res_hold.mission_bus_variables.lift_coefficient                                
+        time                                                             |106150.38997203|         traj.res_hold.mission_bus_variables.time                                            
+        time_phase                                                       |4044.99690976|           traj.res_hold.mission_bus_variables.time_phase                                      
+        mach_rate                                                        |0.0|                     traj.res_hold.mission_bus_variables.mach_rate                                       
+        mass                                                             |167578.80900462|         traj.res_hold.mission_bus_variables.mass                                            
+        distance                                                         |22684018.97827647|       traj.res_hold.mission_bus_variables.distance                                        
+      collocation_constraint
+        defects:mass                                                     |0.0|                     traj.res_hold.collocation_constraint.defects:mass                                   
+        defects:distance                                                 |1e-08|                   traj.res_hold.collocation_constraint.defects:distance                               
+post_mission
+  fuel_burned
+    fuel_burned                                                          [26066.58925999]          mission:fuel_mass                                                                   
+  reserve_fuel_burned
+    reserve_fuel_burned                                                  [3207.04098244]           mission:reserve_fuel_mass                                                           
+  reserve_fuel_frac
+    reserve_fuel_margin_mass                                             [13.03329463]             reserve_fuel_margin_mass                                                            
+  reserve_fuel_mass
+    reserve_fuel_mass                                                    [3220.07427707]           mission:total_reserve_fuel_mass                                                     
+  total_fuel_mass_con
+    total_fuel_mass_constraint                                           [7.94216248e-09]          mission:constraints:mass_residual                                                   
+  res_cruise_distance_constraint
+    distance_resid                                                       [0.]                      res_cruise_distance_constraint.distance_resid                                       
+  excess_fuel_constraint
+    excess_fuel_capacity                                                 [5245.6237913]            mission:constraints:excess_fuel_mass_capacity                                       
+  block_fuel_comp
+    block_fuel                                                           [26066.58925999]          mission:block_fuel_mass                                                             
+state_output
+  mass_final                                                             [97757.28613351]          mission:final_mass                                                                  
+  range_final                                                            [2850.]                   mission:range                                                                       
+  time_final                                                             [414.88798278]            mission:final_time                                                                  
+landing
+  atmosphere
+    standard_atmosphere
+      temperature                                                        [288.15]                  landing.temperature                                                                 
+      static_pressure                                                    [101325.]                 landing.static_pressure                                                             
+      density                                                            [1.224999]                landing.density                                                                     
+      dynamic_viscosity                                                  [1.78938028e-05]          landing.dynamic_viscosity                                                           
+      speed_of_sound                                                     [340.26121619]            landing.speed_of_sound                                                              
+      dsos_dh                                                            [-0.00383775]             landing.dsos_dh                                                                     
+    flight_conditions
+      dynamic_pressure                                                   [0.]                      landing.dynamic_pressure                                                            
+      EAS                                                                [0.]                      landing.EAS                                                                         
+      mach                                                               [0.]                      landing.mach                                                                        
+  calcs
+    mission:landing:ground_distance                                      [5533.77611013]           mission:landing:ground_distance                                                     
+    mission:landing:initial_velocity                                     [120.09535639]            mission:landing:initial_velocity                                                    
+range_constraint
+  range_resid                                                            [0.]                      mission:constraints:range_residual                                                  
+gtow_constraint
+  GTOW                                                                   [0.]                      gtow_constraint.GTOW                                                                
+fuel_obj
+  reg_objective                                                          [2.92866635]              mission:objectives:fuel                                                             
+range_obj
+  reg_objective                                                          [-2.85]                   mission:objectives:range                                                            
+obj_comp
+  obj                                                                    [2.33008606]              obj_comp.obj                                                                        
+
+
+35 Implicit Output(s) in 'model'
+
+varname                            val                     prom_name                                                      
+---------------------------------  ----------------------  ---------------------------------------------------------------
+traj
+  phases
+    climb1
+      indep_states
+        states:mass                |217938.9491004|        traj.climb1.states:mass                                        
+        states:distance            |2012663.99311348|      traj.climb1.states:distance                                    
+      rhs_all
+        solver_sub
+          aerodynamics
+            SkinFrictionCoef
+              cf_iter              |0.02728462|            traj.climb1.rhs_all.aerodynamics.SkinFrictionCoef.cf_iter      
+              skin_friction_coeff  |0.02638575|            traj.climb1.rhs_all.aerodynamics.skin_friction_coeff           
+              Re                   |1181568770.0798664|    traj.climb1.rhs_all.aerodynamics.Re                            
+              wall_temp            |5232.88929187|         traj.climb1.rhs_all.aerodynamics.SkinFrictionCoef.wall_temp    
+          throttle_balance
+            throttle               |2.62332781|            traj.climb1.rhs_all.throttle                                   
+    cruise1
+      indep_states
+        states:mass                |196099.68032547|       traj.cruise1.states:mass                                       
+        states:distance            |12734037.55682704|     traj.cruise1.states:distance                                   
+      rhs_all
+        solver_sub
+          aerodynamics
+            SkinFrictionCoef
+              cf_iter              |0.02813954|            traj.cruise1.rhs_all.aerodynamics.SkinFrictionCoef.cf_iter     
+              skin_friction_coeff  |0.02638|               traj.cruise1.rhs_all.aerodynamics.skin_friction_coeff          
+              Re                   |1017256659.6022296|    traj.cruise1.rhs_all.aerodynamics.Re                           
+              wall_temp            |4751.55783119|         traj.cruise1.rhs_all.aerodynamics.SkinFrictionCoef.wall_temp   
+          throttle_balance
+            throttle               |3.44074714|            traj.cruise1.rhs_all.throttle                                  
+    descent1
+      indep_states
+        states:mass                |178797.46196956|       traj.descent1.states:mass                                      
+        states:distance            |20274275.0606319|      traj.descent1.states:distance                                  
+      rhs_all
+        solver_sub
+          aerodynamics
+            SkinFrictionCoef
+              cf_iter              |0.0272643|             traj.descent1.rhs_all.aerodynamics.SkinFrictionCoef.cf_iter    
+              skin_friction_coeff  |0.02639718|            traj.descent1.rhs_all.aerodynamics.skin_friction_coeff         
+              Re                   |1184191618.427632|     traj.descent1.rhs_all.aerodynamics.Re                          
+              wall_temp            |5252.44683239|         traj.descent1.rhs_all.aerodynamics.SkinFrictionCoef.wall_temp  
+          throttle_balance
+            throttle               |0.97872986|            traj.descent1.rhs_all.throttle                                 
+    res_cruise
+      indep_states
+        states:mass                |175950.76934773|       traj.res_cruise.states:mass                                    
+        states:distance            |21878130.98899069|     traj.res_cruise.states:distance                                
+      rhs_all
+        solver_sub
+          aerodynamics
+            SkinFrictionCoef
+              cf_iter              |0.02892555|            traj.res_cruise.rhs_all.aerodynamics.SkinFrictionCoef.cf_iter  
+              skin_friction_coeff  |0.02712637|            traj.res_cruise.rhs_all.aerodynamics.skin_friction_coeff       
+              Re                   |851955221.5323364|     traj.res_cruise.rhs_all.aerodynamics.Re                        
+              wall_temp            |4698.5347528|          traj.res_cruise.rhs_all.aerodynamics.SkinFrictionCoef.wall_temp
+          throttle_balance
+            throttle               |3.9015675|             traj.res_cruise.rhs_all.throttle                               
+    res_hold
+      indep_states
+        states:mass                |173038.0498254|        traj.res_hold.states:mass                                      
+        states:distance            |23450601.21043747|     traj.res_hold.states:distance                                  
+      rhs_all
+        solver_sub
+          aerodynamics
+            SkinFrictionCoef
+              cf_iter              |0.02892555|            traj.res_hold.rhs_all.aerodynamics.SkinFrictionCoef.cf_iter    
+              skin_friction_coeff  |0.02712637|            traj.res_hold.rhs_all.aerodynamics.skin_friction_coeff         
+              Re                   |851955221.5323364|     traj.res_hold.rhs_all.aerodynamics.Re                          
+              wall_temp            |4698.5347528|          traj.res_hold.rhs_all.aerodynamics.SkinFrictionCoef.wall_temp  
+          throttle_balance
+            throttle               |3.84071541|            traj.res_hold.rhs_all.throttle                                 
+
+
