@@ -1,0 +1,129 @@
+# Regional Jet Baseline Model Parameters
+
+# Configuration Settings
+settings:aerodynamics_method,FLOPS,unitless
+settings:equations_of_motion,energy_state,unitless
+settings:mass_method,FLOPS,unitless
+
+# Input Values
+aircraft:design:type, transport, unitless
+aircraft:design:lift_dependent_drag_coeff_factor,1.3,unitless
+aircraft:design:subsonic_drag_coeff_factor,0.91144,unitless
+aircraft:design:use_alt_mass,False,unitless
+aircraft:design:zero_lift_drag_coeff_factor,0.85,unitless
+mission:reserve_fuel_margin, 0.05,unitless
+
+## Aircraft Systems and Equipment
+aircraft:hydraulics:system_pressure,3000.0,psi
+aircraft:landing_gear:main_gear_oleo_length,86.91,inch
+aircraft:landing_gear:nose_gear_oleo_length,55.404,inch
+
+## Aircraft Crew and Payload
+aircraft:crew_and_payload:baggage_mass_per_passenger,30,lbm
+aircraft:crew_and_payload:num_passengers,114,unitless
+aircraft:crew_and_payload:num_first_class,0,unitless
+aircraft:crew_and_payload:num_economy_class,114,unitless
+aircraft:crew_and_payload:design:num_passengers, 114, unitless
+aircraft:crew_and_payload:design:num_first_class,0,unitless
+aircraft:crew_and_payload:design:num_economy_class,114,unitless
+aircraft:crew_and_payload:mass_per_passenger,190,lbm
+aircraft:crew_and_payload:misc_cargo,0.0,lbm
+aircraft:crew_and_payload:num_flight_attendants,0,unitless
+aircraft:crew_and_payload:num_flight_crew,2,unitless
+aircraft:crew_and_payload:num_galley_crew,3,unitless
+
+## Engine and Nacelle
+
+aircraft:engine:data_file,RegionalJetModel/engine_RegionalJet.deck,unitless
+aircraft:engine:generate_flight_idle,False,unitless
+aircraft:engine:geopotential_alt,False,unitless
+aircraft:engine:ignore_negative_thrust,False,unitless
+aircraft:engine:num_fuselage_engines,0,unitless
+aircraft:engine:num_wing_engines,2,unitless
+aircraft:engine:num_engines,2,unitless
+aircraft:engine:reference_mass,5778.86,lbm
+aircraft:engine:reference_sls_thrust,23814,lbf
+aircraft:engine:scale_mass,True,unitless
+aircraft:engine:scale_factor,1.0000251952632904,unitless
+aircraft:engine:scaled_sls_thrust,23814.6,lbf
+aircraft:engine:wing_locations,0.3643,unitless
+aircraft:engine:additional_mass_fraction,0,unitless
+
+aircraft:nacelle:avg_diameter,6.84125,ft
+aircraft:nacelle:avg_length,11.2583,ft
+aircraft:nacelle:laminar_flow_lower,0,unitless
+aircraft:nacelle:laminar_flow_upper,0,unitless
+
+## Fuel System
+aircraft:fuel:total_capacity,35000,lbm
+
+## Lifting Surfaces
+### Wing
+aircraft:wing:aeroelastic_tailoring_factor,0.0,unitless
+aircraft:wing:airfoil_technology,1.8,unitless
+aircraft:wing:area,1220.15,ft**2
+# aircraft:wing:aspect_ratio,9.5156,unitless
+aircraft:wing:span,103.27,ft
+aircraft:wing:chord_per_semispan_distribution,0.425339,0.240763,0.0974595,unitless
+aircraft:wing:control_surface_area_ratio,0.3183,unitless
+aircraft:wing:dihedral,6,deg
+aircraft:wing:glove_and_bat,0,ft**2
+aircraft:wing:input_station_distribution,0,0.36435,1,unitless
+aircraft:wing:laminar_flow_lower,0,unitless
+aircraft:wing:laminar_flow_upper,0,unitless
+aircraft:wing:load_path_sweep_distribution,21.5956,26.3004,deg
+aircraft:wing:max_camber_at_70_semispan,2,unitless
+aircraft:wing:span_efficiency_factor,0.88,unitless
+aircraft:wing:span_efficiency_reduction,False,unitless
+aircraft:wing:sweep,27.3292,deg
+aircraft:wing:taper_ratio,0.301823,unitless
+aircraft:wing:thickness_to_chord,0.116375,unitless
+aircraft:wing:thickness_to_chord_distribution,0.147033,0.0931539,0.135334,unitless
+aircraft:wing:ultimate_load_factor,3.75,unitless
+
+### Horizontal Tail
+aircraft:horizontal_tail:num_tails, 1, unitless
+aircraft:horizontal_tail:area, 265.90,ft**2
+aircraft:horizontal_tail:aspect_ratio,4.2657,unitless
+aircraft:horizontal_tail:laminar_flow_lower,0,unitless
+aircraft:horizontal_tail:laminar_flow_upper,0,unitless
+aircraft:horizontal_tail:sweep,30.655,deg
+aircraft:horizontal_tail:taper_ratio,0.3944,unitless
+aircraft:horizontal_tail:thickness_to_chord,0.1736,unitless
+aircraft:horizontal_tail:vertical_tail_mount_location,0,unitless
+
+### Vertical Tail
+aircraft:vertical_tail:area, 200.17, ft**2
+aircraft:vertical_tail:aspect_ratio,1.6544,unitless
+aircraft:vertical_tail:laminar_flow_lower,0,unitless
+aircraft:vertical_tail:laminar_flow_upper,0,unitless
+aircraft:vertical_tail:num_tails,1,unitless
+aircraft:vertical_tail:sweep,35.5718,deg
+aircraft:vertical_tail:taper_ratio,0.3355,unitless
+aircraft:vertical_tail:thickness_to_chord,0.201,unitless
+
+### Other
+aircraft:fins:num_fins,0,unitless
+
+## Fuselage
+aircraft:fuselage:laminar_flow_lower,0.0,unitless
+aircraft:fuselage:laminar_flow_upper,0.0,unitless
+aircraft:fuselage:length,119.192,ft
+aircraft:fuselage:max_height,11.548,ft
+aircraft:fuselage:max_width,10.564,ft
+aircraft:fuselage:military_cargo_floor,False,unitless
+aircraft:fuselage:passenger_compartment_length,84.11,ft
+
+### Mission Constraints
+mission:constraints:max_mach,0.82,unitless
+
+aircraft:design:gross_mass,124784.400512,lbm
+aircraft:design:range,2850,NM
+
+mission:takeoff:lift_coefficient_max,1.8,unitless
+mission:landing:lift_coefficient_max,2.77295,unitless
+mission:takeoff:fuel_mass, 500, lbm # TODO check this value
+mission:takeoff:lift_over_drag, 17.35, unitless  # TODO check this value
+
+aircraft:design:cruise_mach,0.78,unitless
+# mission:summary:fuel_flow_scaler,1,unitless

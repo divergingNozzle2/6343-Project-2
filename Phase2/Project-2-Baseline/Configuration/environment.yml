@@ -1,0 +1,12 @@
+name: FWD_aviary
+channels:
+  - conda-forge
+dependencies:
+  - python>=3.12
+  - pip
+  - pyoptsparse
+  - cyipopt
+  - git
+  - black
+  - pip:
+      - aviary
