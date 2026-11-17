@@ -1,0 +1,127 @@
+# Unspecified Hierarchy Variables
+These aviary inputs are unspecified in aviary_inputs, and may be using default values defined in the Aviary metadata.
+
+| Name | Value | Units | Description | Absolute Paths
+| :- |  :- |  :- | :- | :- |
+| **aircraft:air_conditioning:mass_scaler** | [1.] | unitless | air conditioning system mass scaler | ['pre_mission.core_subsystems.mass.AC.aircraft:air_conditioning:mass_scaler']|
+| **aircraft:anti_icing:mass_scaler** | [1.] | unitless | anti-icing system mass scaler | ['pre_mission.core_subsystems.mass.anti_icing.aircraft:anti_icing:mass_scaler']|
+| **aircraft:apu:mass_scaler** | [1.] | unitless | mass scaler for auxiliary power unit | ['pre_mission.core_subsystems.mass.apu.aircraft:apu:mass_scaler']|
+| **aircraft:avionics:mass_scaler** | [1.] | unitless | avionics mass scaler | ['pre_mission.core_subsystems.mass.avionics.aircraft:avionics:mass_scaler']|
+| **aircraft:battery:mass** | [0.] | lbm | total mass of the battery | ['pre_mission.core_subsystems.mass.mass_summation.propulsion_mass.aircraft:battery:mass']|
+| **aircraft:canard:area** | [0.] | ft**2 | canard theoretical area | ['pre_mission.core_subsystems.geometry.other_characteristic_lengths.canard_char_lengths.aircraft:canard:area', 'pre_mission.core_subsystems.geometry.wetted_area.canard_swet.aircraft:canard:area', 'pre_mission.core_subsystems.mass.canard.aircraft:canard:area']|
+| **aircraft:canard:aspect_ratio** | [0.] | unitless | canard theoretical aspect ratio | ['pre_mission.core_subsystems.geometry.other_characteristic_lengths.canard_char_lengths.aircraft:canard:aspect_ratio']|
+| **aircraft:canard:mass_scaler** | [1.] | unitless | mass scaler for canard structure | ['pre_mission.core_subsystems.mass.canard.aircraft:canard:mass_scaler']|
+| **aircraft:canard:taper_ratio** | [0.] | unitless | canard theoretical taper ratio | ['pre_mission.core_subsystems.mass.canard.aircraft:canard:taper_ratio']|
+| **aircraft:canard:thickness_to_chord** | [0.] | unitless | canard thickness-chord ratio | ['pre_mission.core_subsystems.geometry.other_characteristic_lengths.canard_char_lengths.aircraft:canard:thickness_to_chord', 'pre_mission.core_subsystems.geometry.wetted_area.canard_swet.aircraft:canard:thickness_to_chord']|
+| **aircraft:canard:wetted_area_scaler** | [1.] | unitless | canard wetted area scaler | ['pre_mission.core_subsystems.geometry.wetted_area.canard_swet.aircraft:canard:wetted_area_scaler']|
+| **aircraft:crew_and_payload:cabin_crew_mass_scaler** | [1.] | unitless | scaler for total mass of the non-flight crew and their baggage | ['pre_mission.core_subsystems.mass.cabin_crew.aircraft:crew_and_payload:cabin_crew_mass_scaler']|
+| **aircraft:crew_and_payload:cargo_container_mass_scaler** | [1.] | unitless | Scaler for mass of cargo containers | ['pre_mission.core_subsystems.mass.cargo_containers.aircraft:crew_and_payload:cargo_container_mass_scaler']|
+| **aircraft:crew_and_payload:flight_crew_mass_scaler** | [1.] | unitless | scaler for total mass of the flight crew and their baggage | ['pre_mission.core_subsystems.mass.flight_crew.aircraft:crew_and_payload:flight_crew_mass_scaler']|
+| **aircraft:crew_and_payload:passenger_service_mass_scaler** | [1.] | unitless | scaler for mass of passenger service equipment | ['pre_mission.core_subsystems.mass.pass_service.aircraft:crew_and_payload:passenger_service_mass_scaler']|
+| **aircraft:crew_and_payload:wing_cargo** | [0.] | lbm | cargo carried in wing | ['pre_mission.core_subsystems.mass.cargo.cargo_mass.aircraft:crew_and_payload:wing_cargo']|
+| **aircraft:design:base_area** | [0.] | ft**2 | Aircraft base area (total exit cross-section area minus inlet capture areas for internally mounted engines) | ['traj.param_comp.parameters:aircraft:design:base_area']|
+| **aircraft:design:empty_mass_margin_scaler** | [0.] | unitless | empty mass margin scaler | ['pre_mission.core_subsystems.mass.mass_summation.empty_mass_group.empty_mass_margin.aircraft:design:empty_mass_margin_scaler']|
+| **aircraft:design:external_subsystems_mass** | [0.] | lbm | Total mass of all user-defined external subsystems. These are bookkept as part of empty mass. | ['pre_mission.core_subsystems.mass.mass_summation.empty_mass_group.empty_mass.aircraft:design:external_subsystems_mass']|
+| **aircraft:design:supersonic_drag_coeff_factor** | [1.] | unitless | Scaling factor for supersonic drag | ['traj.param_comp.parameters:aircraft:design:supersonic_drag_coeff_factor']|
+| **aircraft:electrical:mass_scaler** | [1.] | unitless | mass scaler for the electrical system | ['pre_mission.core_subsystems.mass.electrical.aircraft:electrical:mass_scaler']|
+| **aircraft:engine:mass_scaler** | [1.] | unitless | scaler for engine mass | ['pre_mission.core_subsystems.mass.engine_mass.aircraft:engine:mass_scaler']|
+| **aircraft:engine:thrust_reversers_mass_scaler** | [0.] | unitless | scaler for mass of thrust reversers on engines. In FLOPS default to 0.0 | ['pre_mission.core_subsystems.mass.thrust_rev.aircraft:engine:thrust_reversers_mass_scaler']|
+| **aircraft:fins:area** | [0.] | ft**2 | vertical fin theoretical area | ['pre_mission.core_subsystems.mass.fin.aircraft:fins:area']|
+| **aircraft:fins:mass_scaler** | [1.] | unitless | mass scaler for fin structure | ['pre_mission.core_subsystems.mass.fin.aircraft:fins:mass_scaler']|
+| **aircraft:fins:taper_ratio** | [0.] | unitless | vertical fin theoretical taper ratio | ['pre_mission.core_subsystems.mass.fin.aircraft:fins:taper_ratio']|
+| **aircraft:fuel:density** | [6.7] | lbm/galUS | fuel density (jet fuel typical density of 6.7 lbm/galUS used in the calculation of wing_capacity(if wing_capacity is not input) and in the calculation of fuel system weight. | ['pre_mission.core_subsystems.mass.fuel_capacity_group.wing_fuel_mass_capacity.aircraft:fuel:density', 'pre_mission.core_subsystems.mass.unusable_fuel.aircraft:fuel:density']|
+| **aircraft:fuel:fuel_system_mass_scaler** | [1.] | unitless | scaler for fuel system mass | ['pre_mission.core_subsystems.mass.fuel_system.aircraft:fuel:fuel_system_mass_scaler']|
+| **aircraft:fuel:unusable_fuel_mass_scaler** | [1.] | unitless | scaler for Unusable fuel mass | ['pre_mission.core_subsystems.mass.unusable_fuel.aircraft:fuel:unusable_fuel_mass_scaler']|
+| **aircraft:fuel:wing_fuel_fraction** | [0.] | unitless | fraction of total theoretical wing volume used for wing fuel | ['pre_mission.core_subsystems.mass.fuel_capacity_group.wing_fuel_mass_capacity.aircraft:fuel:wing_fuel_fraction']|
+| **aircraft:fuel:wing_ref_capacity** | [0.] | lbm | reference fuel volume | ['pre_mission.core_subsystems.mass.fuel_capacity_group.wing_fuel_mass_capacity.aircraft:fuel:wing_ref_capacity']|
+| **aircraft:fuel:wing_ref_capacity_area** | [0.] | unitless | reference wing area for fuel capacity | ['pre_mission.core_subsystems.mass.fuel_capacity_group.wing_fuel_mass_capacity.aircraft:fuel:wing_ref_capacity_area']|
+| **aircraft:fuel:wing_ref_capacity_term_a** | [0.] | unitless | scaling factor A | ['pre_mission.core_subsystems.mass.fuel_capacity_group.wing_fuel_mass_capacity.aircraft:fuel:wing_ref_capacity_term_a']|
+| **aircraft:fuel:wing_ref_capacity_term_b** | [0.] | unitless | scaling factor B | ['pre_mission.core_subsystems.mass.fuel_capacity_group.wing_fuel_mass_capacity.aircraft:fuel:wing_ref_capacity_term_b']|
+| **aircraft:furnishings:mass_scaler** | [1.] | unitless | Furnishings system mass scaler. In GASP based, it is applicale if gross mass > 10000 lbs and number of passengers >= 50. Set it to 0.0 if not use. | ['pre_mission.core_subsystems.mass.furnishings.aircraft:furnishings:mass_scaler']|
+| **aircraft:fuselage:mass_scaler** | [1.] | unitless | mass scaler of the fuselage structure | ['pre_mission.core_subsystems.mass.fuselage.aircraft:fuselage:mass_scaler']|
+| **aircraft:fuselage:wetted_area_scaler** | [1.] | unitless | fuselage wetted area scaler | ['pre_mission.core_subsystems.geometry.wetted_area.fus_swet.aircraft:fuselage:wetted_area_scaler']|
+| **aircraft:horizontal_tail:mass_scaler** | [1.] | unitless | mass scaler of the horizontal tail structure | ['pre_mission.core_subsystems.mass.htail.aircraft:horizontal_tail:mass_scaler']|
+| **aircraft:horizontal_tail:wetted_area_scaler** | [1.] | unitless | horizontal tail wetted area scaler | ['pre_mission.core_subsystems.geometry.wetted_area.tail.aircraft:horizontal_tail:wetted_area_scaler']|
+| **aircraft:hydraulics:mass_scaler** | [1.] | unitless | mass scaler of the hydraulic system | ['pre_mission.core_subsystems.mass.hydraulics.aircraft:hydraulics:mass_scaler']|
+| **aircraft:instruments:mass_scaler** | [1.] | unitless | mass scaler of the instrument group | ['pre_mission.core_subsystems.mass.instruments.aircraft:instruments:mass_scaler']|
+| **aircraft:landing_gear:main_gear_mass_scaler** | [1.] | unitless | mass scaler of the main landing gear structure | ['pre_mission.core_subsystems.mass.landing_group.landing_gear.main_gear.aircraft:landing_gear:main_gear_mass_scaler']|
+| **aircraft:landing_gear:nose_gear_mass_scaler** | [1.] | unitless | mass scaler of the nose landing gear structure | ['pre_mission.core_subsystems.mass.landing_group.landing_gear.nose_gear.aircraft:landing_gear:nose_gear_mass_scaler']|
+| **aircraft:nacelle:mass_scaler** | [1.] | unitless | mass scaler of the nacelle structure for each engine model | ['pre_mission.core_subsystems.mass.nacelle.aircraft:nacelle:mass_scaler']|
+| **aircraft:nacelle:wetted_area_scaler** | [1.] | unitless | nacelle wetted area scaler for each engine model | ['pre_mission.core_subsystems.geometry.wetted_area.nacelles_swet.aircraft:nacelle:wetted_area_scaler']|
+| **aircraft:paint:mass_per_unit_area** | [0.] | lbm/ft**2 | mass of paint per unit area for all wetted area | ['pre_mission.core_subsystems.mass.paint.aircraft:paint:mass_per_unit_area']|
+| **aircraft:propulsion:engine_oil_mass_scaler** | [1.] | unitless | Scaler for engine oil mass | ['pre_mission.core_subsystems.mass.engine_oil.aircraft:propulsion:engine_oil_mass_scaler']|
+| **aircraft:propulsion:misc_mass_scaler** | [1.] | unitless | scaler applied to miscellaneous engine mass (in FLOPS, sum of engine control, starter, and additional mass. In GASP, applied to ADDITIONAL_MASS, which is engine installation mass) | ['pre_mission.core_subsystems.mass.misc_engine.aircraft:propulsion:misc_mass_scaler']|
+| **aircraft:vertical_tail:mass_scaler** | [1.] | unitless | mass scaler of the vertical tail structure | ['pre_mission.core_subsystems.mass.vert_tail.aircraft:vertical_tail:mass_scaler']|
+| **aircraft:vertical_tail:wetted_area_scaler** | [1.] | unitless | vertical tail wetted area scaler | ['pre_mission.core_subsystems.geometry.wetted_area.tail.aircraft:vertical_tail:wetted_area_scaler']|
+| **aircraft:wing:bending_material_mass_scaler** | [1.] | unitless | mass scaler of the bending wing mass term | ['pre_mission.core_subsystems.mass.wing_group.wing_bending.aircraft:wing:bending_material_mass_scaler']|
+| **aircraft:wing:bwb_aftbody_mass** | [0.] | lbm | wing mass breakdown term 4 | ['pre_mission.core_subsystems.mass.wing_group.wing_total.aircraft:wing:bwb_aftbody_mass']|
+| **aircraft:wing:composite_fraction** | [0.] | unitless | Define the decimal fraction of amount of composites used in wing structure where: 0.0 == no composites; 1.0 == maximum use of composites, approximately equivalent bending_mat_weight=.6, struct_weights=.83, misc_weight=.7 (not necessarily all composite). | ['pre_mission.core_subsystems.mass.wing_group.wing_bending.aircraft:wing:composite_fraction', 'pre_mission.core_subsystems.mass.wing_group.wing_misc.aircraft:wing:composite_fraction', 'pre_mission.core_subsystems.mass.wing_group.wing_shear_control.aircraft:wing:composite_fraction']|
+| **aircraft:wing:load_fraction** | [1.] | unitless | fraction of load carried by defined wing | ['pre_mission.core_subsystems.mass.wing_group.wing_bending.aircraft:wing:load_fraction']|
+| **aircraft:wing:mass_scaler** | [1.] | unitless | mass scaler of the overall wing | ['pre_mission.core_subsystems.mass.wing_group.wing_total.aircraft:wing:mass_scaler']|
+| **aircraft:wing:misc_mass_scaler** | [1.] | unitless | mass scaler of the miscellaneous wing mass term | ['pre_mission.core_subsystems.mass.wing_group.wing_bending.aircraft:wing:misc_mass_scaler', 'pre_mission.core_subsystems.mass.wing_group.wing_misc.aircraft:wing:misc_mass_scaler']|
+| **aircraft:wing:shear_control_mass_scaler** | [1.] | unitless | mass scaler of the shear and control term | ['pre_mission.core_subsystems.mass.wing_group.wing_bending.aircraft:wing:shear_control_mass_scaler', 'pre_mission.core_subsystems.mass.wing_group.wing_shear_control.aircraft:wing:shear_control_mass_scaler']|
+| **aircraft:wing:strut_bracing_factor** | [0.] | unitless | Define the wing strut-bracing factor where: 0.0 == no wing-strut; 1.0 == full benefit from strut bracing. | ['pre_mission.core_subsystems.mass.wing_group.wing_bending_material_factor.aircraft:wing:strut_bracing_factor']|
+| **aircraft:wing:surface_control_mass_scaler** | [1.] | unitless | Surface controls mass scaler | ['pre_mission.core_subsystems.mass.surf_ctrl.aircraft:wing:surface_control_mass_scaler']|
+| **aircraft:wing:var_sweep_mass_penalty** | [0.] | unitless | Define the fraction of wing variable sweep mass penalty where: 0.0 == fixed-geometry wing; 1.0 == full variable-sweep wing. | ['pre_mission.core_subsystems.mass.hydraulics.aircraft:wing:var_sweep_mass_penalty', 'pre_mission.core_subsystems.mass.wing_group.wing_bending.aircraft:wing:var_sweep_mass_penalty']|
+| **aircraft:wing:wetted_area_scaler** | [1.] | unitless | wing wetted area scaler | ['pre_mission.core_subsystems.geometry.wetted_area.wing_swet.aircraft:wing:wetted_area_scaler']|
+| **mission:operating_items_mass_additional** | [0.] | lbm | Other operating items (e.g. external tanks, life rafts). | ['pre_mission.core_subsystems.mass.mass_summation.operating_items_mass.mission:operating_items_mass_additional']|
+| **mission:takeoff:ascent_duration** | [0.] | s | duration of the ascent phase of takeoff | ['fuel_obj.ascent_duration', 'range_obj.ascent_duration']|
+| **mission:takeoff:climbout_thrust_fraction** | [1.] | unitless | Fraction of Aircraft.Propulsion.TOTAL_SCALED_SLS_THRUST to use forclimbout phase of simple takeoff calculations. For 2 engine aircraft set = 0.5 for one engine out. | ['takeoff.final_conditions.mission:takeoff:climbout_thrust_fraction']|
+| **mission:taxi:fuel_mass_taxi_in** | [0.] | lbm | Fuel burned to taxi from the runway to the gate. Can be used with energy-stand and 2DOF EOM. | ['post_mission.block_fuel_comp.fuel_burned_taxi_in']|
+| **mission:taxi:fuel_mass_taxi_out** | [0.] | lbm | Fuel burned to taxi from the gate to the runway. Only used in energy-state EOM. Not used in 2DOF EOM. | ['takeoff.taxi_comp.taxi_out_fuel_burned']|
+
+# Unspecified Local Variables
+These local subsystem inputs are unconnected, and may be using default values specified in the component.
+
+| Name | Value | Units | Absolute Paths
+| :- |  :- |  :- | :- |
+| **landing.velocity** | [0.] | ft/s | ['landing.atmosphere.flight_conditions.velocity']|
+| **pre_mission.wing_characteristic_lengths.prep_geom:_Names:CROOT** | [0.] | unitless | ['pre_mission.core_subsystems.geometry.wing_characteristic_lengths.prep_geom:_Names:CROOT']|
+| **res_cruise_distance_constraint.target_distance** | [200.] | nmi | ['post_mission.res_cruise_distance_constraint.target_distance']|
+| **takeoff.altitude** | [0.] | m | ['takeoff.atmosphere.standard_atmosphere.altitude']|
+| **takeoff.velocity** | [0.] | ft/s | ['takeoff.atmosphere.flight_conditions.velocity']|
+| **target_range** | [2850.] | nmi | ['range_constraint.target_range']|
+| **traj.climb1.rhs_all.vectorize_performance.electric_power_in_0** | [0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0.] | kW | ['traj.phases.climb1.rhs_all.solver_sub.propulsion.vectorize_performance.electric_power_in_0']|
+| **traj.climb1.rhs_all.vectorize_performance.propeller_tip_speed_0** | [0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0.] | ft/s | ['traj.phases.climb1.rhs_all.solver_sub.propulsion.vectorize_performance.propeller_tip_speed_0']|
+| **traj.climb1.rhs_all.vectorize_performance.rotations_per_minute_0** | [0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0.] | rpm | ['traj.phases.climb1.rhs_all.solver_sub.propulsion.vectorize_performance.rotations_per_minute_0']|
+| **traj.climb1.rhs_all.vectorize_performance.shaft_power_0** | [0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0.] | hp | ['traj.phases.climb1.rhs_all.solver_sub.propulsion.vectorize_performance.shaft_power_0']|
+| **traj.climb1.rhs_all.vectorize_performance.shaft_power_max_0** | [0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0.] | hp | ['traj.phases.climb1.rhs_all.solver_sub.propulsion.vectorize_performance.shaft_power_max_0']|
+| **traj.climb1.rhs_all.vectorize_performance.t4_0** | [0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0.] | degR | ['traj.phases.climb1.rhs_all.solver_sub.propulsion.vectorize_performance.t4_0']|
+| **traj.climb2.rhs_all.vectorize_performance.electric_power_in_0** | [0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0.] | kW | ['traj.phases.climb2.rhs_all.solver_sub.propulsion.vectorize_performance.electric_power_in_0']|
+| **traj.climb2.rhs_all.vectorize_performance.propeller_tip_speed_0** | [0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0.] | ft/s | ['traj.phases.climb2.rhs_all.solver_sub.propulsion.vectorize_performance.propeller_tip_speed_0']|
+| **traj.climb2.rhs_all.vectorize_performance.rotations_per_minute_0** | [0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0.] | rpm | ['traj.phases.climb2.rhs_all.solver_sub.propulsion.vectorize_performance.rotations_per_minute_0']|
+| **traj.climb2.rhs_all.vectorize_performance.shaft_power_0** | [0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0.] | hp | ['traj.phases.climb2.rhs_all.solver_sub.propulsion.vectorize_performance.shaft_power_0']|
+| **traj.climb2.rhs_all.vectorize_performance.shaft_power_max_0** | [0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0.] | hp | ['traj.phases.climb2.rhs_all.solver_sub.propulsion.vectorize_performance.shaft_power_max_0']|
+| **traj.climb2.rhs_all.vectorize_performance.t4_0** | [0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0.] | degR | ['traj.phases.climb2.rhs_all.solver_sub.propulsion.vectorize_performance.t4_0']|
+| **traj.cruise1.rhs_all.vectorize_performance.electric_power_in_0** | [0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0.] | kW | ['traj.phases.cruise1.rhs_all.solver_sub.propulsion.vectorize_performance.electric_power_in_0']|
+| **traj.cruise1.rhs_all.vectorize_performance.propeller_tip_speed_0** | [0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0.] | ft/s | ['traj.phases.cruise1.rhs_all.solver_sub.propulsion.vectorize_performance.propeller_tip_speed_0']|
+| **traj.cruise1.rhs_all.vectorize_performance.rotations_per_minute_0** | [0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0.] | rpm | ['traj.phases.cruise1.rhs_all.solver_sub.propulsion.vectorize_performance.rotations_per_minute_0']|
+| **traj.cruise1.rhs_all.vectorize_performance.shaft_power_0** | [0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0.] | hp | ['traj.phases.cruise1.rhs_all.solver_sub.propulsion.vectorize_performance.shaft_power_0']|
+| **traj.cruise1.rhs_all.vectorize_performance.shaft_power_max_0** | [0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0.] | hp | ['traj.phases.cruise1.rhs_all.solver_sub.propulsion.vectorize_performance.shaft_power_max_0']|
+| **traj.cruise1.rhs_all.vectorize_performance.t4_0** | [0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0.] | degR | ['traj.phases.cruise1.rhs_all.solver_sub.propulsion.vectorize_performance.t4_0']|
+| **traj.cruise2.rhs_all.vectorize_performance.electric_power_in_0** | [0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0.] | kW | ['traj.phases.cruise2.rhs_all.solver_sub.propulsion.vectorize_performance.electric_power_in_0']|
+| **traj.cruise2.rhs_all.vectorize_performance.propeller_tip_speed_0** | [0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0.] | ft/s | ['traj.phases.cruise2.rhs_all.solver_sub.propulsion.vectorize_performance.propeller_tip_speed_0']|
+| **traj.cruise2.rhs_all.vectorize_performance.rotations_per_minute_0** | [0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0.] | rpm | ['traj.phases.cruise2.rhs_all.solver_sub.propulsion.vectorize_performance.rotations_per_minute_0']|
+| **traj.cruise2.rhs_all.vectorize_performance.shaft_power_0** | [0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0.] | hp | ['traj.phases.cruise2.rhs_all.solver_sub.propulsion.vectorize_performance.shaft_power_0']|
+| **traj.cruise2.rhs_all.vectorize_performance.shaft_power_max_0** | [0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0.] | hp | ['traj.phases.cruise2.rhs_all.solver_sub.propulsion.vectorize_performance.shaft_power_max_0']|
+| **traj.cruise2.rhs_all.vectorize_performance.t4_0** | [0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0.] | degR | ['traj.phases.cruise2.rhs_all.solver_sub.propulsion.vectorize_performance.t4_0']|
+| **traj.descent1.rhs_all.vectorize_performance.electric_power_in_0** | [0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0.] | kW | ['traj.phases.descent1.rhs_all.solver_sub.propulsion.vectorize_performance.electric_power_in_0']|
+| **traj.descent1.rhs_all.vectorize_performance.propeller_tip_speed_0** | [0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0.] | ft/s | ['traj.phases.descent1.rhs_all.solver_sub.propulsion.vectorize_performance.propeller_tip_speed_0']|
+| **traj.descent1.rhs_all.vectorize_performance.rotations_per_minute_0** | [0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0.] | rpm | ['traj.phases.descent1.rhs_all.solver_sub.propulsion.vectorize_performance.rotations_per_minute_0']|
+| **traj.descent1.rhs_all.vectorize_performance.shaft_power_0** | [0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0.] | hp | ['traj.phases.descent1.rhs_all.solver_sub.propulsion.vectorize_performance.shaft_power_0']|
+| **traj.descent1.rhs_all.vectorize_performance.shaft_power_max_0** | [0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0.] | hp | ['traj.phases.descent1.rhs_all.solver_sub.propulsion.vectorize_performance.shaft_power_max_0']|
+| **traj.descent1.rhs_all.vectorize_performance.t4_0** | [0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0.] | degR | ['traj.phases.descent1.rhs_all.solver_sub.propulsion.vectorize_performance.t4_0']|
+| **traj.res_cruise.rhs_all.vectorize_performance.electric_power_in_0** | [0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0.] | kW | ['traj.phases.res_cruise.rhs_all.solver_sub.propulsion.vectorize_performance.electric_power_in_0']|
+| **traj.res_cruise.rhs_all.vectorize_performance.propeller_tip_speed_0** | [0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0.] | ft/s | ['traj.phases.res_cruise.rhs_all.solver_sub.propulsion.vectorize_performance.propeller_tip_speed_0']|
+| **traj.res_cruise.rhs_all.vectorize_performance.rotations_per_minute_0** | [0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0.] | rpm | ['traj.phases.res_cruise.rhs_all.solver_sub.propulsion.vectorize_performance.rotations_per_minute_0']|
+| **traj.res_cruise.rhs_all.vectorize_performance.shaft_power_0** | [0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0.] | hp | ['traj.phases.res_cruise.rhs_all.solver_sub.propulsion.vectorize_performance.shaft_power_0']|
+| **traj.res_cruise.rhs_all.vectorize_performance.shaft_power_max_0** | [0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0.] | hp | ['traj.phases.res_cruise.rhs_all.solver_sub.propulsion.vectorize_performance.shaft_power_max_0']|
+| **traj.res_cruise.rhs_all.vectorize_performance.t4_0** | [0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0.] | degR | ['traj.phases.res_cruise.rhs_all.solver_sub.propulsion.vectorize_performance.t4_0']|
+| **traj.res_hold.rhs_all.vectorize_performance.electric_power_in_0** | [0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0.] | kW | ['traj.phases.res_hold.rhs_all.solver_sub.propulsion.vectorize_performance.electric_power_in_0']|
+| **traj.res_hold.rhs_all.vectorize_performance.propeller_tip_speed_0** | [0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0.] | ft/s | ['traj.phases.res_hold.rhs_all.solver_sub.propulsion.vectorize_performance.propeller_tip_speed_0']|
+| **traj.res_hold.rhs_all.vectorize_performance.rotations_per_minute_0** | [0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0.] | rpm | ['traj.phases.res_hold.rhs_all.solver_sub.propulsion.vectorize_performance.rotations_per_minute_0']|
+| **traj.res_hold.rhs_all.vectorize_performance.shaft_power_0** | [0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0.] | hp | ['traj.phases.res_hold.rhs_all.solver_sub.propulsion.vectorize_performance.shaft_power_0']|
+| **traj.res_hold.rhs_all.vectorize_performance.shaft_power_max_0** | [0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0.] | hp | ['traj.phases.res_hold.rhs_all.solver_sub.propulsion.vectorize_performance.shaft_power_max_0']|
+| **traj.res_hold.rhs_all.vectorize_performance.t4_0** | [0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0.] | degR | ['traj.phases.res_hold.rhs_all.solver_sub.propulsion.vectorize_performance.t4_0']|
+
+

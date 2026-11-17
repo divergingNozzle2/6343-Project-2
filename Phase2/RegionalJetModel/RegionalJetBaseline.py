@@ -22,7 +22,7 @@ climb1_alt_guess = (0, 35000)
 climb1_alt_bounds = (0, 41000)
 climb1_duration_bounds = (10, 250)
 
-# Cruise Phase (cruise1)
+# First Cruise Phase (cruise1)
 cruise1_optimize_mach = False
 cruise1_optimize_alt = False
 cruise1_mach_guess = (0.78, 0.78)
@@ -31,12 +31,30 @@ cruise1_alt_guess = (35000, 35000)
 cruise1_alt_bounds = (35000, 41000)
 cruise1_duration_bounds = (100, 1000)
 
+# Second Climb Phase (climb2)
+climb2_optimize_mach = False
+climb2_optimize_alt = False
+climb2_mach_guess = (0.78, 0.78)
+climb2_mach_bounds = (0.77, 0.79)
+climb2_alt_guess = (35000, 37000)
+climb2_alt_bounds = (35000, 41000)
+climb2_duration_bounds = (10, 250) # how did they choose these bounds
+
+# Second Cruise Phase (cruise2)
+cruise2_optimize_mach = False
+cruise2_optimize_alt = False
+cruise2_mach_guess = (0.78, 0.78)
+cruise2_mach_bounds = (0.77, 0.79)
+cruise2_alt_guess = (37000, 37000)
+cruise2_alt_bounds = (35000, 41000)
+cruise2_duration_bounds = (100, 1000)
+
 # Descent Phase (descent1)
 descent1_optimize_mach = False
 descent1_optimize_alt = False
 descent1_mach_guess = (0.78, 0.3)
 descent1_mach_bounds = (0.29, 0.79)
-descent1_alt_guess = (35000, 0)
+descent1_alt_guess = (37000, 0)
 descent1_alt_bounds = (0, 41000)
 descent1_duration_bounds = (20, 100)
 
@@ -61,25 +79,38 @@ res_hold_duration_bounds = (25, 35)
 res_hold_time_duration = 30
 
 # Generate initial bounds on the initial times for each segment based on the declared segment durations
+# Generate initial time bounds for each phase
 climb1_time_initial_bounds = (0, 0)
+
 cruise1_time_initial_bounds = (
     climb1_time_initial_bounds[0] + climb1_duration_bounds[0],
     climb1_time_initial_bounds[1] + climb1_duration_bounds[1],
 )
-descent1_time_initial_bounds = (
+
+climb2_time_initial_bounds = (
     cruise1_time_initial_bounds[0] + cruise1_duration_bounds[0],
     cruise1_time_initial_bounds[1] + cruise1_duration_bounds[1],
+)
+
+cruise2_time_initial_bounds = (
+    climb2_time_initial_bounds[0] + climb2_duration_bounds[0],
+    climb2_time_initial_bounds[1] + climb2_duration_bounds[1],
+)
+
+descent1_time_initial_bounds = (
+    cruise2_time_initial_bounds[0] + cruise2_duration_bounds[0],
+    cruise2_time_initial_bounds[1] + cruise2_duration_bounds[1],
 )
 
 res_cruise_time_initial_bounds = (
     descent1_time_initial_bounds[0] + descent1_duration_bounds[0],
     descent1_time_initial_bounds[1] + descent1_duration_bounds[1],
 )
+
 res_hold_time_initial_bounds = (
     res_cruise_time_initial_bounds[0] + res_cruise_duration_bounds[0],
     res_cruise_time_initial_bounds[1] + res_cruise_duration_bounds[1],
 )
-
 
 ## Pack mission settings into phase info for Aviary problem
 phase_info = {
@@ -124,6 +155,46 @@ phase_info = {
             "time_duration_bounds": (cruise1_duration_bounds, "min"),
         },
     },
+    "climb2": {
+            "subsystem_options": {"core_aerodynamics": {"method": "computed"}},
+            "user_options": {
+                "num_segments": 5,
+                "order": 3,
+                "mach_optimize": climb2_optimize_mach,
+                "mach_initial": (climb2_mach_guess[0], "unitless"),
+                "mach_final": (climb2_mach_guess[1], "unitless"),
+                "mach_bounds": (climb2_mach_bounds, "unitless"),
+                "mach_polynomial_order": 3,
+                "altitude_optimize": climb2_optimize_alt,
+                "altitude_initial": (climb2_alt_guess[0], "ft"),
+                "altitude_final": (climb2_alt_guess[1], "ft"),
+                "altitude_bounds": (climb2_alt_bounds, "ft"),
+                "altitude_polynomial_order": 3,
+                "throttle_enforcement": "path_constraint",
+                "time_initial_bounds": (climb2_time_initial_bounds, "min"),
+                "time_duration_bounds": (climb2_duration_bounds, "min"),
+            },
+        },
+     "cruise2": {
+            "subsystem_options": {"core_aerodynamics": {"method": "computed"}},
+            "user_options": {
+                "num_segments": 5,
+                "order": 3,
+                "mach_optimize": cruise2_optimize_mach,
+                "mach_initial": (cruise2_mach_guess[0], "unitless"),
+                "mach_final": (cruise2_mach_guess[1], "unitless"),
+                "mach_bounds": (cruise2_mach_bounds, "unitless"),
+                "mach_polynomial_order": 3,
+                "altitude_optimize": cruise2_optimize_alt,
+                "altitude_initial": (cruise2_alt_guess[0], "ft"),
+                "altitude_final": (cruise2_alt_guess[1], "ft"),
+                "altitude_bounds": (cruise2_alt_bounds, "ft"),
+                "altitude_polynomial_order": 3,
+                "throttle_enforcement": "boundary_constraint",
+                "time_initial_bounds": (cruise2_time_initial_bounds, "min"),
+                "time_duration_bounds": (cruise2_duration_bounds, "min"),
+            },
+        },
     "descent1": {
         "subsystem_options": {"core_aerodynamics": {"method": "computed"}},
         "user_options": {
@@ -229,27 +300,45 @@ prob.run_aviary_problem(
     make_plots=True,
 )
 
-#print output
+print("\n--- FINAL AIRCRAFT SIZING RESULTS ---")
 
+variables = {
+    "Gross Mass": ("aircraft:design:gross_mass", "lbm"),
+    "Wing Area": ("aircraft:wing:area", "ft**2"),
+    "Total Thrust": ("aircraft:propulsion:total_scaled_sls_thrust", "lbf"),
+    "Wing Aspect Ratio": ("aircraft:wing:aspect_ratio", "unitless"),
+    "Design Range": ("mission:range", "nmi"),
+    "Mission Fuel Mass": ("mission:fuel_mass", "lbm"),
+}
 
-# label, [variable names to try: new (1.0+) first, then older], units
-results = [
-    ("Gross Mass",         ["aircraft:design:gross_mass", "mission:design:gross_mass"], "lbm"),
-    ("Wing Area",          ["aircraft:wing:area"],                                      "ft**2"),
-    ("Total Thrust",       ["aircraft:propulsion:total_scaled_sls_thrust"],             "lbf"),
-    ("Wing Aspect Ratio",  ["aircraft:wing:aspect_ratio"],                              "unitless"),
-    ("Design Range",       ["aircraft:design:range", "mission:design:range"],           "NM"),
-    ("Mission Fuel Mass",  ["mission:fuel_mass", "mission:summary:fuel_mass"],          "lbm"),
+for label, (variable, units) in variables.items():
+    try:
+        value = prob.get_val(variable, units=units)
+        print(f"{label}: {value.item():,.4f} {units}")
+    except (KeyError, RuntimeError, ValueError) as error:
+        print(f"{label}: Not found ({error})")
+print("\n--- MISSION PHASE DISTANCES ---")
+
+phases = [
+    "climb1",
+    "cruise1",
+    "climb2",
+    "cruise2",
+    "descent1",
+    "res_cruise",
+    "res_hold",
 ]
 
-print("--- FINAL AIRCRAFT SIZING RESULTS ---")
-for label, names, units in results:
-    for name in names:
-        try:
-            val = prob.get_val(name, units=units).item()
-            print(f"{label}: {val:,.4f} {units}")
-            break
-        except KeyError:
-            continue
-    else:
-        print(f"{label}: not found")
+for phase in phases:
+    try:
+        distance = prob.get_val(
+            f"traj.{phase}.timeseries.distance",
+            units="nmi"
+        )
+
+        segment_distance = distance[-1].item() - distance[0].item()
+
+        print(f"{phase:<15}: {segment_distance:,.2f} nmi")
+
+    except (KeyError, RuntimeError, ValueError) as error:
+        print(f"{phase}: Not found ({error})")
