@@ -342,3 +342,75 @@ for phase in phases:
 
     except (KeyError, RuntimeError, ValueError) as error:
         print(f"{phase}: Not found ({error})")
+
+# masses of individual components
+print("\n--- MASS BREAKDOWN (% of gross mass) ---")
+
+def mass(name):
+    """Get a mass from the model in lbm, summed over engine types if it's an array."""
+    return prob.get_val(name, units="lbm").sum()
+
+gross = mass("aircraft:design:gross_mass")
+
+# Nacelle mass in Aviary is per nacelle, so multiply by the number of engines
+try:
+    n_eng = prob.aviary_inputs.get_val("aircraft:engine:num_engines")
+    nacelle_total = float((prob.get_val("aircraft:nacelle:mass", units="lbm") * n_eng).sum())
+except Exception:
+    nacelle_total = mass("aircraft:nacelle:mass")
+    print("(Warning: couldn't read engine count; nacelle shown per nacelle)")
+
+# (label, mass in lbm, reference %) -- reference % taken from the assignment table
+groups = [
+    ("STRUCTURE", [
+        ("Wing",             mass("aircraft:wing:mass"),                 9.51),
+        ("Horizontal Tail",  mass("aircraft:horizontal_tail:mass"),      0.94),
+        ("Vertical Tail",    mass("aircraft:vertical_tail:mass"),        0.58),
+        ("Fuselage",         mass("aircraft:fuselage:mass"),            10.62),
+        ("Landing Gear",     mass("aircraft:landing_gear:total_mass"),   4.09),
+        ("Nacelle",          nacelle_total,                              0.88),
+    ], ("Structure Total", mass("aircraft:design:structure_mass"), 26.62)),
+
+    ("PROPULSION", [
+        ("Engines",          mass("aircraft:propulsion:total_engine_mass"),          9.26),
+        ("Thrust Reversers", mass("aircraft:propulsion:total_thrust_reversers_mass"), 0.00),
+        ("Misc. Systems",    mass("aircraft:propulsion:total_misc_mass"),            0.00),
+        ("Fuel System",      mass("aircraft:fuel:fuel_system_mass"),                 0.54),
+    ], ("Propulsion Total", mass("aircraft:propulsion:mass"), 9.80)),
+
+    ("SYSTEMS AND EQUIPMENT", [
+        ("Surface Controls", mass("aircraft:wing:surface_control_mass"), 1.02),
+        ("Auxiliary Power",  mass("aircraft:apu:mass"),                  0.51),
+        ("Instruments",      mass("aircraft:instruments:mass"),          0.00),
+        ("Hydraulics",       mass("aircraft:hydraulics:mass"),           0.68),
+        ("Electrical",       mass("aircraft:electrical:mass"),           1.16),
+        ("Avionics",         mass("aircraft:avionics:mass"),             0.71),
+        ("Furnishings",      mass("aircraft:furnishings:mass"),         10.89),
+        ("Air Conditioning", mass("aircraft:air_conditioning:mass"),     0.74),
+        ("Anti-Icing",       mass("aircraft:anti_icing:mass"),           0.00),
+    ], ("Systems and Equipment Total", mass("aircraft:design:systems_and_equipment_mass"), 15.71)),
+]
+
+header = f"{'Component':<30}{'Mass [lbm]':>14}{'% Gross':>10}{'Ref %':>9}{'Diff':>8}"
+line = "-" * len(header)
+
+def row(label, m, ref):
+    pct = 100 * m / gross
+    return f"{label:<30}{m:>14,.2f}{pct:>10.2f}{ref:>9.2f}{pct - ref:>+8.2f}"
+
+print(f"Gross mass: {gross:,.2f} lbm\n")
+print(header)
+print(line)
+for group_name, items, (total_label, total_mass, total_ref) in groups:
+    for label, m, ref in items:
+        print(row(label, m, ref))
+    print(row(total_label, total_mass, total_ref))
+    # Sanity check: components should add up to Aviary's own total
+    comp_sum = sum(m for _, m, _ in items)
+    if abs(comp_sum - total_mass) > 1.0:
+        print(f"  (note: listed components sum to {comp_sum:,.2f} lbm; "
+              f"difference {total_mass - comp_sum:,.2f} lbm is from items not listed)")
+    print(line)
+
+print(row("Empty Mass", mass("aircraft:design:empty_mass"), 52.13))
+print(line)
